@@ -1,0 +1,3 @@
+[submodule "SKExtension"]
+	path = SKExtension
+	url = git@github.com:yakunsang/SKExtension.git
