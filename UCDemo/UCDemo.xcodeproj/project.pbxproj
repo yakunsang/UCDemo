@@ -83,6 +83,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390FBD5F211AD311002F8F6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				398EB0CC21185BA000DF4702 /* TopNewsController.h */,
+				398EB0CD21185BA000DF4702 /* TopNewsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		390FBD60211AD31B002F8F6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		390FBD61211AD322002F8F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		393CA8902114440300900104 = {
 			isa = PBXGroup;
 			children = (
@@ -177,8 +200,9 @@
 		393CA8B82114481C00900104 /* UCTopNews */ = {
 			isa = PBXGroup;
 			children = (
-				398EB0CC21185BA000DF4702 /* TopNewsController.h */,
-				398EB0CD21185BA000DF4702 /* TopNewsController.m */,
+				390FBD61211AD322002F8F6D /* Model */,
+				390FBD60211AD31B002F8F6D /* View */,
+				390FBD5F211AD311002F8F6D /* Controller */,
 			);
 			path = UCTopNews;
 			sourceTree = "<group>";
@@ -244,7 +268,6 @@
 				393CA8952114440300900104 /* Sources */,
 				393CA8962114440300900104 /* Frameworks */,
 				393CA8972114440300900104 /* Resources */,
-				86A847453402F8C2F70E28EE /* [CP] Embed Pods Frameworks */,
 				4F89071CFE5F4C519472DD79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -313,26 +336,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-UCTarget-UCDemo/Pods-UCTarget-UCDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86A847453402F8C2F70E28EE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-UCTarget-UCDemo/Pods-UCTarget-UCDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		989197C9BB0A0C584EB93552 /* [CP] Check Pods Manifest.lock */ = {

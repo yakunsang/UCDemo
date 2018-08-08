@@ -12,6 +12,8 @@
 #import "AFNetworking.h"
 
 static NSString  *const UCNetworkServiceLockName = @"com.ucnetworkservice.lock.name";
+static NSString  *const UCURL = @"http://v.juhe.cn/toutiao/index";
+static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
 
 @interface UCNetworkService()
 
@@ -52,7 +54,11 @@ static NSString  *const UCNetworkServiceLockName = @"com.ucnetworkservice.lock.n
 + (void)uc_get:(NSString *)path params:(NSDictionary *)params target:(UCNetworkTarget *)target {
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
     NSString *url = [[UCNetworkService shareInstance].baseURL stringByAppendingString:path];
-   NSURLSessionDataTask *dataTask = [manger GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+   
+    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
+    [mDic setValue:APPKEY forKey:@"key"];
+    
+    NSURLSessionDataTask *dataTask = [manger GET:url parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
@@ -72,7 +78,11 @@ static NSString  *const UCNetworkServiceLockName = @"com.ucnetworkservice.lock.n
 + (void)uc_post:(NSString *)path params:(NSDictionary *)params target:(UCNetworkTarget *)target {
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
     NSString *url = [[UCNetworkService shareInstance].baseURL stringByAppendingString:path];
-    NSURLSessionDataTask *dataTask = [manger POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+    
+    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
+    [mDic setValue:APPKEY forKey:@"key"];
+    
+    NSURLSessionDataTask *dataTask = [manger POST:url parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
