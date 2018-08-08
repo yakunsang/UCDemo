@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -823,11 +823,11 @@
 		0535D72FC029AB09A4E359886221ABB0 /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLeakedObjectProxy.h; path = MLeaksFinder/MLeakedObjectProxy.h; sourceTree = "<group>"; };
 		05D84E2D658EDAE234B5F0F8096C65A7 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYKit/Text/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
 		06BDE56CC501925EDD91CCB40ADA9DB2 /* Pods-UCTarget-UCDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UCTarget-UCDemo-dummy.m"; sourceTree = "<group>"; };
-		071E3CC4AE0D9496532F0B86ED0FC023 /* libWHDebugTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWHDebugTool.a; path = libWHDebugTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		071E3CC4AE0D9496532F0B86ED0FC023 /* libWHDebugTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWHDebugTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0731DB9702CCAC522E0E1A95F8D9BE15 /* YYKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYKit-dummy.m"; sourceTree = "<group>"; };
 		073C0E29527B5B2B61D2EFFC78CFCB2A /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YYAdd.h"; path = "YYKit/Base/Foundation/NSBundle+YYAdd.h"; sourceTree = "<group>"; };
 		0746AA3EE0DB3077DAB4DA07C30D00DD /* EZSWeakReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSWeakReference.h; path = EasySequence/Classes/Utils/EZSWeakReference.h; sourceTree = "<group>"; };
-		074BF05BE10F8C51515602D07D77AC34 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		074BF05BE10F8C51515602D07D77AC34 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		076EFBEF3EA6CAABA02751CF4908503D /* FBBlockStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockStrongLayout.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h; sourceTree = "<group>"; };
 		07D537EAC55E169F62FE68B95C2829B4 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYKit/Text/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
 		07D985489044224000FF4E6FE5C0AD6C /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
@@ -837,14 +837,14 @@
 		091CB3984483A4F51977D2D150D7935B /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		09638836CF923A4F1C033D12924F5965 /* BaseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseType.h; path = FBRetainCycleDetector/Layout/Classes/Parser/BaseType.h; sourceTree = "<group>"; };
 		09F5EACB2076F199FF5B27438A96E982 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		0B44CF35426B0A3A07C3E66FF0C5BE7E /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B44CF35426B0A3A07C3E66FF0C5BE7E /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B93DFDAC59DD67CFB41DAD14D1BC68B /* EZRListenContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRListenContext.h; path = EasyReact/Classes/Core/EZRListenContext.h; sourceTree = "<group>"; };
 		0CB5E79F49CCDF923EAAFE7ACBB568A5 /* YYThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeDictionary.h; path = YYKit/Utility/YYThreadSafeDictionary.h; sourceTree = "<group>"; };
 		0CCE0984FCDF814C125CF5EE356AC198 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
 		0D66EB03619F49F81AC4045BC73501D0 /* SKCacheItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKCacheItem.m; path = SKExtension/Cache/SKCacheItem.m; sourceTree = "<group>"; };
 		0DD82F9C5C55B2230AE5F7E74A0A3BB9 /* NSObject+EZSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZSequence.h"; path = "EasySequence/Classes/Transfers/NSObject+EZSequence.h"; sourceTree = "<group>"; };
 		0DDCB2B567D74EDD3D8D348582D1FB7E /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
-		0DE3A6433CF68DDB635E2278DBD52130 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
+		0DE3A6433CF68DDB635E2278DBD52130 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
 		0E9F9D96B5AC1516001F7DD5222F90CE /* UIScreen+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+YYAdd.m"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.m"; sourceTree = "<group>"; };
 		0EF1035A65AB96D228CD03960B531F93 /* EZRNode+Traversal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+Traversal.h"; path = "EasyReact/Classes/Core/EZRNode+Traversal.h"; sourceTree = "<group>"; };
 		0F75891B3CAF375A4773E544E2FA6854 /* NSString+SKCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SKCheck.h"; path = "SKExtension/Foundation/NSString+SKCheck.h"; sourceTree = "<group>"; };
@@ -852,7 +852,7 @@
 		0FB4F77A369C854D16A96A820ACFE58B /* NSDate+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+YYAdd.h"; path = "YYKit/Base/Foundation/NSDate+YYAdd.h"; sourceTree = "<group>"; };
 		1021558236EFA1ECA286A3A84028A7D2 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
 		10847D117B8B1B7D886A202375DC5452 /* EZRDelayTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDelayTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRDelayTransform.h; sourceTree = "<group>"; };
-		10F90FB12898CA1ED9545B1845E5EEBD /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
+		10F90FB12898CA1ED9545B1845E5EEBD /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
 		1137816AC789A48227278153A33DED05 /* EZRTakeTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRTakeTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRTakeTransform.h; sourceTree = "<group>"; };
 		113B74CB7AEF2ECF5B6F65CAA575F6BF /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MemoryLeak.h"; path = "MLeaksFinder/UIView+MemoryLeak.h"; sourceTree = "<group>"; };
 		128E42763D92980F07D43E473F008CB2 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
@@ -870,8 +870,8 @@
 		1737DF34DAA91C9EDAFAB728EDF1244D /* NSSet+EZSTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+EZSTransfer.h"; path = "EasySequence/Classes/Transfers/NSSet+EZSTransfer.h"; sourceTree = "<group>"; };
 		17512C5408DA215713E31875586F7B63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		17ABF026F0C16DD87EC0091607520A1E /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
-		17EFEFB9B2EDBD51C779630D9BB3D9C2 /* libMLeaksFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMLeaksFinder.a; path = libMLeaksFinder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		17FB5F74D29B5715B22BC87DA954E411 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		17EFEFB9B2EDBD51C779630D9BB3D9C2 /* libMLeaksFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMLeaksFinder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FB5F74D29B5715B22BC87DA954E411 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ADDDAF28B115946B32F98D114F7B3D /* NSString+SKDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SKDate.m"; path = "SKExtension/Foundation/NSString+SKDate.m"; sourceTree = "<group>"; };
 		18B3B834B28156CCC87FAFE6D1EF288A /* NSArray+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YYAdd.h"; path = "YYKit/Base/Foundation/NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		18E403B1A62FB21B40CF41EC8F36F922 /* NSNumber+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+YYAdd.m"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.m"; sourceTree = "<group>"; };
@@ -890,7 +890,7 @@
 		1D5578BC695F3E9A8175ACEA77C052A2 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		1E0A816FF36B74CA69C95899E8F0D28A /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
 		1E880F681CB1C7617C8E50EAC9E64A60 /* EZRMetaMacrosPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMetaMacrosPrivate.h; path = EasyReact/Classes/Core/Private/EZRMetaMacrosPrivate.h; sourceTree = "<group>"; };
-		1EEDD2A9B21E18E48024EF645AC17C61 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
+		1EEDD2A9B21E18E48024EF645AC17C61 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
 		1F096F7B3ED1EBB015549841F0863889 /* SKCacheManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKCacheManager.m; path = SKExtension/Cache/SKCacheManager.m; sourceTree = "<group>"; };
 		1F81A5BEE3649DC1E7BEB58506CEDA4A /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYKit/Base/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
 		207A43EA042D4DA3EC1F137487C6D8D5 /* EZRZipTransformGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRZipTransformGroup.m; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransformGroup.m; sourceTree = "<group>"; };
@@ -904,7 +904,7 @@
 		22AB0B48C249DCE099EF23C9BCAC950D /* EZRBlockListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRBlockListen.h; path = EasyReact/Classes/Core/ListenEdges/EZRBlockListen.h; sourceTree = "<group>"; };
 		22BD237FA21666852F21725CFC6BA3B4 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
 		22DEAB77591063C2DF868DAC64F0FFB6 /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYKit/Text/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
-		22F02F847791756AADF5847253DEC7D6 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		22F02F847791756AADF5847253DEC7D6 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
 		231374285241D55C1EB051F8543C3806 /* NSTimer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YYAdd.m"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.m"; sourceTree = "<group>"; };
 		232124499D744A9176307A40D0DA879B /* EZRNode+Mutable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Mutable.m"; path = "EasyReact/Classes/Core/EZRNode+Mutable.m"; sourceTree = "<group>"; };
 		24A2039CE4B67251E078E6F9343CB9A0 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
@@ -918,14 +918,14 @@
 		27BA6665FB26121CA230674CC3228125 /* EZRBlockListen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRBlockListen.m; path = EasyReact/Classes/Core/ListenEdges/EZRBlockListen.m; sourceTree = "<group>"; };
 		28A3EA910152DC8C23F4302A53E5397B /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
 		28DF9C43AC8E6E64A24A596542ED5AB4 /* EZRDeliveredListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDeliveredListen.h; path = EasyReact/Classes/Core/ListenEdges/EZRDeliveredListen.h; sourceTree = "<group>"; };
-		290B495BF4436DA05E1FE045DC7BF3D5 /* libEasyFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyFoundation.a; path = libEasyFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		290B495BF4436DA05E1FE045DC7BF3D5 /* libEasyFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		293713ABEAD5BE8C0E703829C33FE908 /* EZMetaMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMetaMacros.h; path = EasyTuple/EZMetaMacros.h; sourceTree = "<group>"; };
 		29845906CFAB5F5EAECEA46C7C062D7E /* NSArray+EZSTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+EZSTransfer.m"; path = "EasySequence/Classes/Transfers/NSArray+EZSTransfer.m"; sourceTree = "<group>"; };
 		299DCDCDA3CA485D8D8C0ABA506D1852 /* EZRZipTransformGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRZipTransformGroup.h; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransformGroup.h; sourceTree = "<group>"; };
 		29A54B5584FE9A5CBDD9F294E4B70F74 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		2A46F30DE844E202DA69ACDCC453AC0C /* EZSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSequence.m; path = EasySequence/Classes/EZSequence.m; sourceTree = "<group>"; };
 		2B52994CD34BD41BB7AF2A46384B4196 /* EZRDeliverTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDeliverTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRDeliverTransform.h; sourceTree = "<group>"; };
-		2BAC9AAE2960471E613CD25D730ECA90 /* FBRetainCycleDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBRetainCycleDetector.mm; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm; sourceTree = "<group>"; };
+		2BAC9AAE2960471E613CD25D730ECA90 /* FBRetainCycleDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBRetainCycleDetector.mm; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm; sourceTree = "<group>"; };
 		2D20CBD8FA5E4E2C1B0D2A14B104D137 /* NSString+SKURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SKURL.m"; path = "SKExtension/Foundation/NSString+SKURL.m"; sourceTree = "<group>"; };
 		2DA04B1B03BCA5741A0FFDD42550CA59 /* EZRMetaMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMetaMacros.h; path = EasyReact/Classes/Core/EZRMetaMacros.h; sourceTree = "<group>"; };
 		2E9BC42A97C687A5F3A9BB9C77B2F3E6 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
@@ -942,10 +942,10 @@
 		31C80FC97237B226F17613974A79FBD9 /* EZRSenderList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRSenderList.h; path = EasyReact/Classes/Utils/EZRSenderList.h; sourceTree = "<group>"; };
 		31C899A95AF76B67EA112EA2B32FE362 /* NSString+SKFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SKFoundation.m"; path = "SKExtension/Foundation/NSString+SKFoundation.m"; sourceTree = "<group>"; };
 		32D3C19F6888D358AB0E976F56B98A8D /* EZRNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRNode.h; path = EasyReact/Classes/Core/EZRNode.h; sourceTree = "<group>"; };
-		333A02548DC13A6D1917987BF145C593 /* FBNodeEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBNodeEnumerator.mm; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.mm; sourceTree = "<group>"; };
+		333A02548DC13A6D1917987BF145C593 /* FBNodeEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBNodeEnumerator.mm; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.mm; sourceTree = "<group>"; };
 		336E4D7149443AD2641D0954DE8C3D78 /* EZRZipTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRZipTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransform.h; sourceTree = "<group>"; };
 		339ECB885407956C4B8848A737C2D647 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		341AD2466CDFFB77F74E41F9C53D8DE9 /* libFBRetainCycleDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBRetainCycleDetector.a; path = libFBRetainCycleDetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		341AD2466CDFFB77F74E41F9C53D8DE9 /* libFBRetainCycleDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBRetainCycleDetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E1ED093939C865EBDE1A7DDDC3A182 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		3587602FA551E99DA2D3687E1A20C3DE /* Pods-UCTarget-UCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UCTarget-UCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3617046ADD0B611AE680F0A37940CD1F /* FBNodeEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNodeEnumerator.h; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.h; sourceTree = "<group>"; };
@@ -970,7 +970,7 @@
 		3C9FC9DB61A55B50752EFF524A2EFD0B /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		3CE64914B93960C859CD1B9E53DD4E9E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		3CF7D6F0CA6A8D8F03EEAAD8B5926A76 /* EZRSenderList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRSenderList.m; path = EasyReact/Classes/Utils/EZRSenderList.m; sourceTree = "<group>"; };
-		3D2BC87211768D04FEE745585669E8FC /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2BC87211768D04FEE745585669E8FC /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D53C0378E3BA6DCB7A64E6BA9FE7A74 /* EZRTransformEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRTransformEdge.h; path = EasyReact/Classes/Core/EZRTransformEdge.h; sourceTree = "<group>"; };
 		3D96114211C2AF446C98689EAE4E504A /* EZRNode+Value.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Value.m"; path = "EasyReact/Classes/Core/EZRNode+Value.m"; sourceTree = "<group>"; };
 		3DDA9DEA646620F27532FF732618208D /* EZSQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSQueue.h; path = EasySequence/Classes/Sequences/EZSQueue.h; sourceTree = "<group>"; };
@@ -1012,7 +1012,7 @@
 		4BE4F7800464B66A9BB7CFD03FFA9496 /* EZSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSequence.h; path = EasySequence/Classes/EZSequence.h; sourceTree = "<group>"; };
 		4BE71C649AE57E991BAA810CC05F9479 /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYKit/Text/String/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
 		4C3581484FA41B21573CE1CC7B33DC76 /* YYGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYGestureRecognizer.m; path = YYKit/Utility/YYGestureRecognizer.m; sourceTree = "<group>"; };
-		4CD8455735B5D5B3EE1B4CB696E67F21 /* libEasyTuple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyTuple.a; path = libEasyTuple.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD8455735B5D5B3EE1B4CB696E67F21 /* libEasyTuple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyTuple.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC490A36979EDDD5D8C8F798AE4B0A2 /* UIImage+SKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SKFoundation.h"; path = "SKExtension/UIKit/UIImage+SKFoundation.h"; sourceTree = "<group>"; };
 		4E1C112669073D138BFBF62BD000047B /* NSThread+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSThread+YYAdd.h"; path = "YYKit/Base/Foundation/NSThread+YYAdd.h"; sourceTree = "<group>"; };
 		4E256C75084E6715096AF0CCACE37D52 /* WHDebugFPSMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHDebugFPSMonitor.h; path = WHDebugTool/WHDebugFPSMonitor.h; sourceTree = "<group>"; };
@@ -1021,14 +1021,14 @@
 		4F79F2987B578702CC1D7DAAF0562AE6 /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
 		50175EECB43337332ACB4E3C2135A5C4 /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
 		5018D2BF607248BCE66C984E3CAB7423 /* EZRNode+ProjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+ProjectPrivate.h"; path = "EasyReact/Classes/Core/Private/EZRNode+ProjectPrivate.h"; sourceTree = "<group>"; };
-		5089E7FB736A9BF9BD61F0C4136FDCFE /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYKit.a; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5105AB2E9422064F0BB8629A91AF310F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		5089E7FB736A9BF9BD61F0C4136FDCFE /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5105AB2E9422064F0BB8629A91AF310F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
 		5127AA27655EDD9BC5BC075348DD4A1A /* FBRetainCycleDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBRetainCycleDetector.xcconfig; sourceTree = "<group>"; };
 		51DACD79D0105BD7DCADC5E013DC77F7 /* YYTextContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextContainerView.m; path = YYKit/Text/Component/YYTextContainerView.m; sourceTree = "<group>"; };
 		51EEE185D060379FE862A5F5EA9FCED6 /* EZRMutableNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRMutableNode.m; path = EasyReact/Classes/Core/EZRMutableNode.m; sourceTree = "<group>"; };
 		5226CF8D4567462AC328416FC3B690B9 /* NSObject+SKSwizzled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+SKSwizzled.h"; path = "SKExtension/Foundation/NSObject+SKSwizzled.h"; sourceTree = "<group>"; };
 		523B3D947BA9A52F972BE8A80834BCD0 /* FBObjectInStructReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectInStructReference.m; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.m; sourceTree = "<group>"; };
-		5284D5A075D5A4F418BF595E9E4789F6 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		5284D5A075D5A4F418BF595E9E4789F6 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
 		535DCA235EC333C8EEAE975DB6490B77 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		539AF01C598B41F1D2DAE1CBECA146E8 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		53A523067620FD317B8B6D60F427F16F /* UITableView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+YYAdd.h"; path = "YYKit/Base/UIKit/UITableView+YYAdd.h"; sourceTree = "<group>"; };
@@ -1051,11 +1051,11 @@
 		5BD8C31DC86C641B9CD84D7F10734149 /* EZRNode+Graph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Graph.m"; path = "EasyReact/Classes/Core/EZRNode+Graph.m"; sourceTree = "<group>"; };
 		5C31EE9108307148A3A0B3375669E17E /* NSObject+YYAddForARC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForARC.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.h"; sourceTree = "<group>"; };
 		5C7958B61B16FCE8FDB119E4136327FA /* EasyFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyFoundation-prefix.pch"; sourceTree = "<group>"; };
-		5D0A4B10D7417B4F6E3790C537409E6F /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		5D0A4B10D7417B4F6E3790C537409E6F /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
 		5EC7DB70DD6AF2F3B10DF4C0E432FADC /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		5FB12DFA04FE690C96A32F68A42437DF /* EZNamedTupleImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZNamedTupleImp.h; path = EasyTuple/EZNamedTupleImp.h; sourceTree = "<group>"; };
 		604DD2154B138FFF956EAA8CD458117A /* EasyFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyFoundation.xcconfig; sourceTree = "<group>"; };
-		6077537D7913C6223D91E933FDD3690F /* FBObjectiveCNSCFTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBObjectiveCNSCFTimer.mm; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm; sourceTree = "<group>"; };
+		6077537D7913C6223D91E933FDD3690F /* FBObjectiveCNSCFTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBObjectiveCNSCFTimer.mm; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm; sourceTree = "<group>"; };
 		60D562BA1EB1D7CE4F283BDC65F61F26 /* EZRScanTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRScanTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRScanTransform.h; sourceTree = "<group>"; };
 		614EBBADAA780531D28E8A7F46AA3E3A /* UIViewController+SKMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SKMediator.h"; path = "SKExtension/UIKit/UIViewController+SKMediator.h"; sourceTree = "<group>"; };
 		615709685FD1845EA64E2C6E4374C0D1 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/aes/fileenc.h; sourceTree = "<group>"; };
@@ -1083,9 +1083,9 @@
 		694065EA144C586B5BB50C7C12B2B181 /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYKit/Text/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
 		696B47A5CCE8B6F63EFE8BFE0039DED6 /* NSNull+SKCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNull+SKCommon.m"; path = "SKExtension/Foundation/NSNull+SKCommon.m"; sourceTree = "<group>"; };
 		69A714AD2DA23D625AC989A9C431BD70 /* EZRFilteredTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRFilteredTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRFilteredTransform.m; sourceTree = "<group>"; };
-		69BCC56E7D8C3F06CE4A489B1F1661A2 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		69BCC56E7D8C3F06CE4A489B1F1661A2 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
 		69E3620BFE5FAB0EA177BD608FFD8A3A /* Pods-SKExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6A14215C5A5D2624BB944673473B7F17 /* FBClassStrongLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBClassStrongLayout.mm; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm; sourceTree = "<group>"; };
+		6A14215C5A5D2624BB944673473B7F17 /* FBClassStrongLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBClassStrongLayout.mm; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm; sourceTree = "<group>"; };
 		6A23653BA28F3D4A9BA1AC215FF10307 /* NSData+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+YYAdd.m"; path = "YYKit/Base/Foundation/NSData+YYAdd.m"; sourceTree = "<group>"; };
 		6ADE31220559BCB3730FAF599CE9A4AB /* UITableView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+YYAdd.m"; path = "YYKit/Base/UIKit/UITableView+YYAdd.m"; sourceTree = "<group>"; };
 		6B7BECC6167851E58BF71B65C73D3B21 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
@@ -1105,7 +1105,7 @@
 		6F68D87BAD027D58A0737EEBA37EF7BC /* YYImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImage.m; path = YYKit/Image/YYImage.m; sourceTree = "<group>"; };
 		6F69DB9E2125C5581113B6EEF3BF008F /* EasyReact-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyReact-dummy.m"; sourceTree = "<group>"; };
 		6F9230E1ECD7424CD709DA5F191F3561 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+MemoryLeak.h"; path = "MLeaksFinder/UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
-		6FB812B52210D91C9ECFF1D9D26C8672 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
+		6FB812B52210D91C9ECFF1D9D26C8672 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
 		7064FCD561281A1599D34AF2429271B5 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		70B102E377D96DE7A336119BB3041CAF /* EZRCombineTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRCombineTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRCombineTransform.h; sourceTree = "<group>"; };
 		71019BB976F21F23C3F746F32753C42B /* YYDispatchQueuePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDispatchQueuePool.h; path = YYKit/Utility/YYDispatchQueuePool.h; sourceTree = "<group>"; };
@@ -1134,7 +1134,7 @@
 		78E633494E6B2DC44E6F71E954BB89B7 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYKit/Text/String/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
 		7911F4B83847EC1C8B34F7BE68ECDA44 /* UIBarButtonItem+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+YYAdd.h"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.h"; sourceTree = "<group>"; };
 		7A05B5F273DEA8F10A1889F1FC5C5833 /* EZSWeakOrderedSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSWeakOrderedSet.h; path = EasySequence/Classes/Sequences/EZSWeakOrderedSet.h; sourceTree = "<group>"; };
-		7A77CFDD8BF30BCAB4A4AF7000284B20 /* libPods-SKExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SKExtension.a"; path = "libPods-SKExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A77CFDD8BF30BCAB4A4AF7000284B20 /* libPods-SKExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A84163CE783CF2DC1A73A73B7F4C847 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		7A99B5893FFFAA0CC7CEF506EAA15738 /* UIScreen+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+YYAdd.h"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.h"; sourceTree = "<group>"; };
 		7ABEAFA6103D359BA6ED3C0CC39C8151 /* UIImageView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+YYWebImage.h"; path = "YYKit/Image/Categories/UIImageView+YYWebImage.h"; sourceTree = "<group>"; };
@@ -1157,7 +1157,7 @@
 		7F9B7244CE3862BA64ACAE65F4365B42 /* NSTimer+SKFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+SKFoundation.m"; path = "SKExtension/Foundation/NSTimer+SKFoundation.m"; sourceTree = "<group>"; };
 		80204D869C5DEC7BEA2EF36B011A8D5F /* YYAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = YYKit/Image/YYAnimatedImageView.h; sourceTree = "<group>"; };
 		805E6BD4993DDD0809E368A01FB0195A /* NSObject+EZR_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZR_Extension.h"; path = "EasyReact/Classes/Categories/NSObject+EZR_Extension.h"; sourceTree = "<group>"; };
-		80601320C8AA8AC7A852479C591CDE04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		80601320C8AA8AC7A852479C591CDE04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		808FBECBD131E4463459D078C64ADF61 /* UIButton+SKVerticalLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SKVerticalLayout.m"; path = "SKExtension/UIKit/UIButton+SKVerticalLayout.m"; sourceTree = "<group>"; };
 		80EF28DA59E9B427C6530200F23638EB /* WHDebugConsoleLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WHDebugConsoleLabel.m; path = WHDebugTool/WHDebugConsoleLabel.m; sourceTree = "<group>"; };
 		812F971B53751B8B1B78891C64B8612C /* EasyReact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyReact.h; path = EasyReact/Classes/EasyReact.h; sourceTree = "<group>"; };
@@ -1167,7 +1167,7 @@
 		82C9EFDE604B96FAD56BB908D5F3D649 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		83278D0465172F8152B317D32210E2E9 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		8329539C01E96B7A52952412CA48ABBF /* EasySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasySequence.h; path = EasySequence/Classes/EasySequence.h; sourceTree = "<group>"; };
-		836E9EE54D20EF3ECBB5935E9EA9E59F /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		836E9EE54D20EF3ECBB5935E9EA9E59F /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BA34AEE41F951926BDDF466FD9C0E9 /* EZSArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSArray.h; path = EasySequence/Classes/Sequences/EZSArray.h; sourceTree = "<group>"; };
 		83C475D679F62D60AD773EF85A673AA9 /* YYReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYReachability.h; path = YYKit/Utility/YYReachability.h; sourceTree = "<group>"; };
 		8613500A4511A3E3071AF4289F0EDF7E /* EZRFlattenTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRFlattenTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRFlattenTransform.h; sourceTree = "<group>"; };
@@ -1194,7 +1194,7 @@
 		8EE2F80B64A7752AD292E7649877F543 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		8EF073AB519A53896CAD32B043B920CE /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MemoryLeak.m"; path = "MLeaksFinder/UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		8F83210E0E0850DADD557777F691E4F9 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAnimatedImageView.m; path = YYKit/Image/YYAnimatedImageView.m; sourceTree = "<group>"; };
-		8FD319920A76706BE679B9E3E3189B63 /* FBStandardGraphEdgeFilters.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBStandardGraphEdgeFilters.mm; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm; sourceTree = "<group>"; };
+		8FD319920A76706BE679B9E3E3189B63 /* FBStandardGraphEdgeFilters.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBStandardGraphEdgeFilters.mm; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm; sourceTree = "<group>"; };
 		90864F46F78A6E8A34948C21F0E93BC9 /* YYReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYReachability.m; path = YYKit/Utility/YYReachability.m; sourceTree = "<group>"; };
 		90CD4EACF03D846DBF49B9FC7CF2435F /* UIButton+SKClickInterval.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SKClickInterval.m"; path = "SKExtension/UIKit/UIButton+SKClickInterval.m"; sourceTree = "<group>"; };
 		916C338C7F215D8ACBE84BF254A26B8B /* EZTupleBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZTupleBase.h; path = EasyTuple/EZTupleBase.h; sourceTree = "<group>"; };
@@ -1203,7 +1203,7 @@
 		927314D6D3E3154F2C2A3ACBA24E65F6 /* FBObjectiveCBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectiveCBlock.m; path = FBRetainCycleDetector/Graph/FBObjectiveCBlock.m; sourceTree = "<group>"; };
 		929ADC08E64E61CF4D5B40E9AF25F6FC /* WHDebugTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHDebugTool.xcconfig; sourceTree = "<group>"; };
 		939E179FA8B836F30F8043E9D4A3E51B /* NSObject+EZR_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EZR_Extension.m"; path = "EasyReact/Classes/Categories/NSObject+EZR_Extension.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942BDB35A4DCA5B2598A41659EECBD51 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MemoryLeak.m"; path = "MLeaksFinder/NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
 		94C4D19C005C040DA10086B779EB7742 /* WHDebugMemoryMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHDebugMemoryMonitor.h; path = WHDebugTool/WHDebugMemoryMonitor.h; sourceTree = "<group>"; };
 		94C792B7BBF9CE633776F96C28A09BAA /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
@@ -1217,13 +1217,13 @@
 		970981ACF4B70A9CBB3F76D149F68511 /* UIView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYAdd.h"; path = "YYKit/Base/UIKit/UIView+YYAdd.h"; sourceTree = "<group>"; };
 		9721711C11076922EFA022C73657F79B /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		9729ECF916FCD9C309D0608FFA57CFDD /* NSData+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+YYAdd.h"; path = "YYKit/Base/Foundation/NSData+YYAdd.h"; sourceTree = "<group>"; };
-		9883A779DF40B2C364316CC8D6B5D68A /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
+		9883A779DF40B2C364316CC8D6B5D68A /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
 		98BBB62C124B7B33783DC891BC13A5E5 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYKit/Model/YYClassInfo.h; sourceTree = "<group>"; };
 		99F9DC596C1EC253983F23196C29D9C7 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
 		9ACA1958C758A930AD92C021CE72015C /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
 		9B2534981A23808005D91DAF8627638E /* Pods-SKExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SKExtension-dummy.m"; sourceTree = "<group>"; };
 		9B7CA8661E95764F50C1FB963C32EE0B /* EZRBlockCancelable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRBlockCancelable.h; path = EasyReact/Classes/Core/EZRBlockCancelable.h; sourceTree = "<group>"; };
-		9BD10BAD1E01B0FAE219EE6C56DBD884 /* SKExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SKExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BD10BAD1E01B0FAE219EE6C56DBD884 /* SKExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SKExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C90C4EF4AE5B045AB198B67D444480F /* EZRMapTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRMapTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRMapTransform.m; sourceTree = "<group>"; };
 		9C91397E575684A734212EB2D65E2671 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		9E094E2DF014BB3F8B655293552A578B /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYKit/Text/String/YYTextArchiver.h; sourceTree = "<group>"; };
@@ -1249,7 +1249,7 @@
 		A3F327913B9498785A0B844B74EE2F67 /* Pods-SKExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKExtension.release.xcconfig"; sourceTree = "<group>"; };
 		A4A26ADFC5B650E1141327CD3FDF8A67 /* UIImageView+SKWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SKWebCache.h"; path = "SKExtension/UIKit/UIImageView+SKWebCache.h"; sourceTree = "<group>"; };
 		A50A39667AB3292C5A48958CCB259F71 /* FBIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBIvarReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.h; sourceTree = "<group>"; };
-		A50BA9BC36A116843D8668B91BDEA7B3 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
+		A50BA9BC36A116843D8668B91BDEA7B3 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
 		A5108E039A2B6BC2C6290A93A24A5A66 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPageViewController+MemoryLeak.h"; path = "MLeaksFinder/UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		A5168B44B547B777661AA9010F16CC74 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		A521269CF1C80A0025FE87AB9C34055A /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
@@ -1260,13 +1260,13 @@
 		A7A016943C528FED80C409A783D9BA59 /* NSSet+EZSTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+EZSTransfer.m"; path = "EasySequence/Classes/Transfers/NSSet+EZSTransfer.m"; sourceTree = "<group>"; };
 		A7C1C588A5CCE57B3D87C931C22D11F7 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYKit/Text/Component/YYTextLayout.m; sourceTree = "<group>"; };
 		A803D02CC775D539B05829183BE3FCFB /* Pods-UCTarget-UCDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UCTarget-UCDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		A866AF56D49AA3BD325C815E7D7384A1 /* libEasyReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyReact.a; path = libEasyReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A866AF56D49AA3BD325C815E7D7384A1 /* libEasyReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86AB2A74492979B913BCC89FC994168 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		A8FFCC3C315E819A77FDE2B26BA218D8 /* EasySequence-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasySequence-prefix.pch"; sourceTree = "<group>"; };
 		AA6E67C9614B850C6A0590DB2778CF6D /* FBRetainCycleDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBRetainCycleDetector-prefix.pch"; sourceTree = "<group>"; };
 		ABCE7314FD8FF4AEA0B374ED0CE7C41B /* UIButton+SKWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SKWebCache.m"; path = "SKExtension/UIKit/UIButton+SKWebCache.m"; sourceTree = "<group>"; };
 		AC2538D995F0BCBC847E4F5D3575212F /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYKit/Model/NSObject+YYModel.h"; sourceTree = "<group>"; };
-		AC82D5C058E547DB222E27BF57363084 /* libSKExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSKExtension.a; path = libSKExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC82D5C058E547DB222E27BF57363084 /* libSKExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD26A940D9EB97780332B052F69643B9 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
 		AD64984B1074AFB91ED63EBAC7E8E82E /* EasySequence-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasySequence-dummy.m"; sourceTree = "<group>"; };
 		ADBAE1FC78D4AB6403DD1D27C4F7CDA4 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYKit/Model/YYClassInfo.m; sourceTree = "<group>"; };
@@ -1283,14 +1283,14 @@
 		B2AAFD3B26E92902745B5681B33CA33C /* EZRSkipTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRSkipTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRSkipTransform.h; sourceTree = "<group>"; };
 		B2CAAB2E2AB5B11AAC78A019DED37DA9 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		B2E231275798EBB1A0F6AFF7325BB1EE /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YYAdd.m"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
-		B306138E4A611271D7666B43FF77FBBC /* FBAssociationManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBAssociationManager.mm; path = FBRetainCycleDetector/Associations/FBAssociationManager.mm; sourceTree = "<group>"; };
+		B306138E4A611271D7666B43FF77FBBC /* FBAssociationManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAssociationManager.mm; path = FBRetainCycleDetector/Associations/FBAssociationManager.mm; sourceTree = "<group>"; };
 		B34DEFACA173C96A2A374C1C6C8B6ECB /* WHDebugConsoleLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHDebugConsoleLabel.h; path = WHDebugTool/WHDebugConsoleLabel.h; sourceTree = "<group>"; };
 		B3649F6C90A345E5DFF850A303EBB5FE /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYKit/Image/YYImage.h; sourceTree = "<group>"; };
 		B37A7C9CD94A02AB5C7F28675103E6F9 /* FBRetainCycleDetector+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBRetainCycleDetector+Internal.h"; path = "FBRetainCycleDetector/Detector/FBRetainCycleDetector+Internal.h"; sourceTree = "<group>"; };
 		B4C24C871FEAE7BD48671A9392E38582 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYKit/Image/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		B5804C5723EA2FA9914C9B9D83A6AA5A /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		B61B2CD5414770102D7466062A5A5746 /* NSTimer+SKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+SKFoundation.h"; path = "SKExtension/Foundation/NSTimer+SKFoundation.h"; sourceTree = "<group>"; };
-		B622EA4BC7D1642E748C3CD1606D3334 /* FBObjectiveCGraphElement.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBObjectiveCGraphElement.mm; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm; sourceTree = "<group>"; };
+		B622EA4BC7D1642E748C3CD1606D3334 /* FBObjectiveCGraphElement.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBObjectiveCGraphElement.mm; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm; sourceTree = "<group>"; };
 		B671C80AE3DE3FB52C48C39E7EF704E9 /* SKExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKExtension-prefix.pch"; sourceTree = "<group>"; };
 		B68BA6A924A687C737A25D71959FBA26 /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYKit/Text/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
 		B6B6A53773CB6BDB79AD1354A3E34E9A /* EZRThrottleTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRThrottleTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRThrottleTransform.h; sourceTree = "<group>"; };
@@ -1308,7 +1308,7 @@
 		BC753856C765DAE832551BF8EE5311A4 /* YYWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageOperation.h; path = YYKit/Image/YYWebImageOperation.h; sourceTree = "<group>"; };
 		BCAF56A28058049A9D6451AF0FD18B1D /* Pods-UCTarget-UCDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UCTarget-UCDemo-resources.sh"; sourceTree = "<group>"; };
 		BCB5F1D25919B56173F230FB15DA853E /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		BCD45A37DF3FD1720D950CD8F20FA004 /* FBStructEncodingParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBStructEncodingParser.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm; sourceTree = "<group>"; };
+		BCD45A37DF3FD1720D950CD8F20FA004 /* FBStructEncodingParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBStructEncodingParser.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm; sourceTree = "<group>"; };
 		BCEE601864DF24A0EF173EE58537A5E8 /* FBObjectReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectReference.h; sourceTree = "<group>"; };
 		BCF823700942DA01D246877EA2580B6F /* EasyFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyFoundation.h; path = EasyFoundation/Classes/EasyFoundation.h; sourceTree = "<group>"; };
 		BD339D9C243462B023349129BCF4BB9F /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
@@ -1320,7 +1320,7 @@
 		BEB313D4869AAB48175CA05EDBB8EAF3 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		BEDAD6ED068EC625459AE7DA7BEF9B50 /* UITextField+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+YYAdd.m"; path = "YYKit/Base/UIKit/UITextField+YYAdd.m"; sourceTree = "<group>"; };
 		BEED3255CC1330E2B44A84E8EF8DEC60 /* UINavigationBar+Transition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Transition.h"; path = "SKExtension/UIKit/UINavigationBar+Transition.h"; sourceTree = "<group>"; };
-		BEFBD30CA56E5032D02C00171A8A8F97 /* libPods-UCTarget-UCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-UCTarget-UCDemo.a"; path = "libPods-UCTarget-UCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFBD30CA56E5032D02C00171A8A8F97 /* libPods-UCTarget-UCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCTarget-UCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2FF226DC68AEB424109F32E8878739 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		BF4BD23702F3356E63904DC03C355ED9 /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYKit/Cache/YYMemoryCache.h; sourceTree = "<group>"; };
 		BF5876BC03CD3AD46BFA0FCA4AF72888 /* SKFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKFileManager.m; path = SKExtension/Cache/SKFileManager.m; sourceTree = "<group>"; };
@@ -1334,7 +1334,7 @@
 		C25D727437618E4631E732211CEE711A /* YYTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTransaction.m; path = YYKit/Utility/YYTransaction.m; sourceTree = "<group>"; };
 		C274675D60B203E02475168B07E8A03B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		C316E5876ED53B8B5A0036585A098E9B /* NSNotificationCenter+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+YYAdd.m"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.m"; sourceTree = "<group>"; };
-		C328B18EB6DE81FB003D08568E8C1FD5 /* libEasySequence.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasySequence.a; path = libEasySequence.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C328B18EB6DE81FB003D08568E8C1FD5 /* libEasySequence.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasySequence.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C328DE73D7E3B84C29247E98999E496A /* YYImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCache.h; path = YYKit/Image/YYImageCache.h; sourceTree = "<group>"; };
 		C33F0F5E7F74998394460D924D1E05FB /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		C56B00B55749EF4014F636858126EAE7 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+MemoryLeak.h"; path = "MLeaksFinder/UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
@@ -1379,7 +1379,7 @@
 		D4F7D05189ECBCBCD5969F13BADF6EF9 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYKit/Text/String/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
 		D4FD4EB923C288F6B9EE9CF30E6813FE /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		D536504E3C1F14A482CF7AFDB830AF97 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
-		D61D6E6ED357FF07C399C836C0C73344 /* Struct.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = Struct.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm; sourceTree = "<group>"; };
+		D61D6E6ED357FF07C399C836C0C73344 /* Struct.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = Struct.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm; sourceTree = "<group>"; };
 		D62C1EF8026DE79141F522C63526CDC7 /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
 		D6717DF095A561F6B2A18ECE6A31C972 /* Pods-SKExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SKExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		D6B4D4E71BB89F438312B2BA8C34223D /* FBAssociationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAssociationManager.h; path = FBRetainCycleDetector/Associations/FBAssociationManager.h; sourceTree = "<group>"; };
@@ -1389,7 +1389,7 @@
 		D809E974FFBB8A82027B90D52DC409C6 /* YYWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWeakProxy.m; path = YYKit/Utility/YYWeakProxy.m; sourceTree = "<group>"; };
 		D91A93177A4C89F262C50FA6E3AA1BEF /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
 		D93946479EDE45BAC36EC4EE44466D08 /* NSNotificationCenter+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+YYAdd.h"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.h"; sourceTree = "<group>"; };
-		D951122E7E1D25E916DB05CE823FDE96 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
+		D951122E7E1D25E916DB05CE823FDE96 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
 		D9CF741AE997D5E3778E6D7885C9C2BF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		DA9BCEC848344B764B7ADD7543A2F0C6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		DB617956509512FE891DB801D34C162B /* NSDictionary+SKFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SKFoundation.m"; path = "SKExtension/Foundation/NSDictionary+SKFoundation.m"; sourceTree = "<group>"; };
@@ -1463,9 +1463,9 @@
 		F2160505CA8FDBB162EE8C6BA014DFE1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		F2336EDF74E26F2602D4831FDF562D9D /* NSObject+EZR_Listen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZR_Listen.h"; path = "EasyReact/Classes/Core/NSObject+EZR_Listen.h"; sourceTree = "<group>"; };
 		F2843333E09BFD2D543D612372A6EC9C /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYKit/Text/String/YYTextUtilities.m; sourceTree = "<group>"; };
-		F2DAE0F280BC419F4E6FDEC31B8B09A4 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
+		F2DAE0F280BC419F4E6FDEC31B8B09A4 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
 		F2DCA0770E387EEB4AC6104E13B14669 /* EZRPathTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRPathTrampoline.m; path = EasyReact/Classes/Utils/EZRPathTrampoline.m; sourceTree = "<group>"; };
-		F2E93DF6716B87DAE17105A317C416E2 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
+		F2E93DF6716B87DAE17105A317C416E2 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
 		F314D37434074E7F4B460A738D72ACB2 /* Pods-SKExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKExtension-resources.sh"; sourceTree = "<group>"; };
 		F3492C72FDF3FE177D023E841D1A8B97 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
 		F367311C16B689234022721958240182 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
@@ -1481,7 +1481,7 @@
 		F694B8482BFC0F5D1C303DAF299D0FB5 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+YYAdd.h"; path = "YYKit/Base/UIKit/UIControl+YYAdd.h"; sourceTree = "<group>"; };
 		F70D8037F5F612588A9BD64C3812B600 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		F78258F957CE16AABE5089D46039D244 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		F7A30BF15E5914F7CC5EE26F1D59473E /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A30BF15E5914F7CC5EE26F1D59473E /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85C97F43B8721F2F0B0C6800DBD8641 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		F8EC1D54B7724AE2EEC6E85FA458D382 /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYKit/Cache/YYDiskCache.h; sourceTree = "<group>"; };
 		F9CE95522FE706A92054244DD8FFF582 /* MLeaksFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLeaksFinder-dummy.m"; sourceTree = "<group>"; };
@@ -1810,7 +1810,6 @@
 				3CF6E8FF8D8610521CAEF91DB12A9C6D /* Core */,
 				056196087E2110FCFAC1A2098DA4E177 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1877,7 +1876,6 @@
 				1B8438C66FA4179F913300C8CA0A704F /* Type.h */,
 				BCD2A10308E99A03928E0A580FC9481D /* Support Files */,
 			);
-			name = FBRetainCycleDetector;
 			path = FBRetainCycleDetector;
 			sourceTree = "<group>";
 		};
@@ -1942,7 +1940,6 @@
 				8EF073AB519A53896CAD32B043B920CE /* UIViewController+MemoryLeak.m */,
 				4B5CE7FD0EC7845EF77C8ADADF657447 /* Support Files */,
 			);
-			name = MLeaksFinder;
 			path = MLeaksFinder;
 			sourceTree = "<group>";
 		};
@@ -1976,7 +1973,6 @@
 				65FEBA0FC309B2A2A0EA82269E7B8CC6 /* WHDebugToolManager.m */,
 				9936EA5F91769BFA868B9E4F6CD99B99 /* Support Files */,
 			);
-			name = WHDebugTool;
 			path = WHDebugTool;
 			sourceTree = "<group>";
 		};
@@ -2002,7 +1998,6 @@
 				6087CCD7F8DD25B59E3366EE3CF3DABA /* Support Files */,
 				CEF9DAB06CE8BD29879B10FBF3A720FA /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2130,7 +2125,6 @@
 				62C617BFA51C8A70234F41B44EC9D4AA /* NSObject+EZR_Listen.m */,
 				07D385B216AAFF3D2DAD6517A76BAD17 /* Support Files */,
 			);
-			name = EasyReact;
 			path = EasyReact;
 			sourceTree = "<group>";
 		};
@@ -2188,7 +2182,6 @@
 				77A332929679EE28B6894D65F8A4FA27 /* ViewController+MASAdditions.m */,
 				53A110A3ED636206A98AF1873EEF04A8 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -2200,7 +2193,6 @@
 				8A99521DDCC4D8493AB24892CEAC9379 /* EZTupleBase+EZFTransfer.m */,
 				943BB2F4995E581B743143A3EB595D85 /* Support Files */,
 			);
-			name = EasyFoundation;
 			path = EasyFoundation;
 			sourceTree = "<group>";
 		};
@@ -2306,7 +2298,6 @@
 				F2F2FDA1553BAC56EE7CDC570E52EF1D /* Resources */,
 				5A8F51CC528FF0FADE1D628E98DDEED7 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -2429,7 +2420,6 @@
 				A7A016943C528FED80C409A783D9BA59 /* NSSet+EZSTransfer.m */,
 				FE1A896C04768B7C7A3FD9C24FD094C2 /* Support Files */,
 			);
-			name = EasySequence;
 			path = EasySequence;
 			sourceTree = "<group>";
 		};
@@ -2636,7 +2626,6 @@
 				F7EAC6CAD25CC533612E95833531D8BB /* no-arc */,
 				B51FEC3638A54E82C674C4CBF0A8E2A0 /* Support Files */,
 			);
-			name = YYKit;
 			path = YYKit;
 			sourceTree = "<group>";
 		};
@@ -2653,7 +2642,6 @@
 				44604250625BDEB864A0F1EBCD6AD4DF /* EZTupleSubClasses.m */,
 				AFC93F003ED1028DDAAC0B41EE339C7A /* Support Files */,
 			);
-			name = EasyTuple;
 			path = EasyTuple;
 			sourceTree = "<group>";
 		};
@@ -2696,7 +2684,6 @@
 				22BD237FA21666852F21725CFC6BA3B4 /* ZipArchive.h */,
 				527FD1D914458704B4282328F936D283 /* Support Files */,
 			);
-			name = SSZipArchive;
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
