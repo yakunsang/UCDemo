@@ -32,6 +32,7 @@
 		398EB0D721185BDB00DF4702 /* VedioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0D621185BDB00DF4702 /* VedioController.m */; };
 		398EB0DA21185C1400DF4702 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0D921185C1400DF4702 /* MyViewController.m */; };
 		398EB0DD211861E900DF4702 /* WindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0DC211861E900DF4702 /* WindowsController.m */; };
+		39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */; };
 		57D044D1957F3F847F148E68 /* libPods-UCTarget-UCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C82A151ADE7B673B9EC06A /* libPods-UCTarget-UCDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		398EB0D921185C1400DF4702 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		398EB0DB211861E900DF4702 /* WindowsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsController.h; sourceTree = "<group>"; };
 		398EB0DC211861E900DF4702 /* WindowsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowsController.m; sourceTree = "<group>"; };
+		39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Image.h"; sourceTree = "<group>"; };
+		39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,7 @@
 		393CA8902114440300900104 = {
 			isa = PBXGroup;
 			children = (
+				39F5F8ED211C166700A3ED49 /* Category */,
 				393CA89B2114440300900104 /* UCDemo */,
 				393CA89A2114440300900104 /* Products */,
 				7F2A1C6B9058B74023ED849C /* Pods */,
@@ -273,6 +277,15 @@
 				398EB0CA211859DD00DF4702 /* TabbarViewController.m */,
 			);
 			path = BaseViewContoller;
+			sourceTree = "<group>";
+		};
+		39F5F8ED211C166700A3ED49 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */,
+				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		7F2A1C6B9058B74023ED849C /* Pods */ = {
@@ -411,6 +424,7 @@
 				398EB0C72118486C00DF4702 /* BaseNavigaionController.m in Sources */,
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
+				39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */,
 				393CA8AC2114440400900104 /* main.m in Sources */,
 				398EB0CE21185BA000DF4702 /* TopNewsController.m in Sources */,
 				3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */,
@@ -487,6 +501,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -501,10 +516,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = UCDemo/SKExtension/SKExtension/SKExtension;
 			};
 			name = Debug;
 		};
@@ -545,6 +562,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -553,9 +571,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = UCDemo/SKExtension/SKExtension/SKExtension;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -564,12 +584,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34404E430050F9357CAD53DC /* Pods-UCTarget-UCDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BBF93KUYD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyFoundation\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyReact\"",
+					"\"${PODS_ROOT}/Headers/Public/EasySequence\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyTuple\"",
+					"\"${PODS_ROOT}/Headers/Public/FBRetainCycleDetector\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/MLeaksFinder\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SKExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/WHDebugTool\"",
+					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
+					"$(SRCROOT)/SKExtension/SKExtension/SKExtension",
+				);
 				INFOPLIST_FILE = UCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangzhong.UCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -584,12 +626,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D91B6F986F0FCDBA00DF879 /* Pods-UCTarget-UCDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BBF93KUYD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyFoundation\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyReact\"",
+					"\"${PODS_ROOT}/Headers/Public/EasySequence\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyTuple\"",
+					"\"${PODS_ROOT}/Headers/Public/FBRetainCycleDetector\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/MLeaksFinder\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SKExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/WHDebugTool\"",
+					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
+					"$(SRCROOT)/SKExtension/SKExtension/SKExtension",
+				);
 				INFOPLIST_FILE = UCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,6 +660,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangzhong.UCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

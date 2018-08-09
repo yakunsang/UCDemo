@@ -7,7 +7,7 @@
 //
 
 #import "NewsLeftImgCell.h"
-#import "UIColor+image.h"
+//#import "UIColor+image.h"
 
 @implementation NewsLeftImgCell
 
@@ -33,7 +33,7 @@
     
     CGContextFillRect(context, rect);
     
-    
+
 }
 
 @end

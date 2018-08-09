@@ -10,12 +10,13 @@
 #define PrefixHeader_pch
 #import "Masonry.h"
 #import "MJRefresh.h"
-#import "SKExtension.h"
 #import "YYKit.h"
 #import "BaseModule.h"
 #import "UCNetworkTarget.h"
 #import "UCNetworkService.h"
 #import "Header.h"
+#import "SKExtension.h"
+#import "UIColor+Image.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
