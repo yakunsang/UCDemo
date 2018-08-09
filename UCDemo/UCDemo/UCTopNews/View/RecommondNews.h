@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class NewsModel;
 @interface RecommondNews : UITableView
+
+@property (nonatomic, strong) NSMutableArray<NewsModel *> *dataArray;
 
 @end

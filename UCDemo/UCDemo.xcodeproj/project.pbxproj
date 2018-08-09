@@ -14,6 +14,8 @@
 		3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC12211B1FEC002D416A /* NewsBottomOneImgCell.m */; };
 		3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC15211B2455002D416A /* NewsDefaultCell.m */; };
 		3905EC1A211B3075002D416A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC19211B3075002D416A /* NewsModel.m */; };
+		39133EE9211C6FCC00186FD8 /* UIColor+UCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */; };
+		39133EEC211C925100186FD8 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39133EEB211C925100186FD8 /* NSString+Additions.m */; };
 		393CA89E2114440300900104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA89D2114440300900104 /* AppDelegate.m */; };
 		393CA8A12114440300900104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA8A02114440300900104 /* ViewController.m */; };
 		393CA8A42114440300900104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393CA8A22114440300900104 /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 		3905EC15211B2455002D416A /* NewsDefaultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDefaultCell.m; sourceTree = "<group>"; };
 		3905EC18211B3075002D416A /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		3905EC19211B3075002D416A /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		39133EE7211C6FCC00186FD8 /* UIColor+UCImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+UCImage.h"; sourceTree = "<group>"; };
+		39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UCImage.m"; sourceTree = "<group>"; };
+		39133EEA211C925100186FD8 /* NSString+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		39133EEB211C925100186FD8 /* NSString+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		393CA8992114440300900104 /* UCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393CA89C2114440300900104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		393CA89D2114440300900104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,9 +147,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		39133EE6211C6FB000186FD8 /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				39133EE7211C6FCC00186FD8 /* UIColor+UCImage.h */,
+				39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */,
+				39133EEA211C925100186FD8 /* NSString+Additions.h */,
+				39133EEB211C925100186FD8 /* NSString+Additions.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
 		393CA8902114440300900104 = {
 			isa = PBXGroup;
 			children = (
+				39133EE6211C6FB000186FD8 /* Categroy */,
 				393CA89B2114440300900104 /* UCDemo */,
 				393CA89A2114440300900104 /* Products */,
 				7F2A1C6B9058B74023ED849C /* Pods */,
@@ -403,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39133EE9211C6FCC00186FD8 /* UIColor+UCImage.m in Sources */,
 				3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */,
 				398EB0CB211859DD00DF4702 /* TabbarViewController.m in Sources */,
 				398EB0C3211823A100DF4702 /* UCNetworkService.m in Sources */,
@@ -419,6 +438,7 @@
 				3905EC0D211B1F72002D416A /* NewsLeftImgCell.m in Sources */,
 				393CA8C32114494D00900104 /* UCNetworkTarget.m in Sources */,
 				3905EC07211B19A1002D416A /* RecommondNews.m in Sources */,
+				39133EEC211C925100186FD8 /* NSString+Additions.m in Sources */,
 				3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */,
 				393CA89E2114440300900104 /* AppDelegate.m in Sources */,
 				393CA8C92114515900900104 /* BaseViewController.m in Sources */,

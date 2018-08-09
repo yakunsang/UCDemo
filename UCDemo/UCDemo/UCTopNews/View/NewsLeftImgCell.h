@@ -7,7 +7,9 @@
 //
 
 #import "BaseNewsCell.h"
-
+@class NewsModel;
 @interface NewsLeftImgCell : BaseNewsCell
+
+@property (nonatomic, strong) NewsModel *model;
 
 @end

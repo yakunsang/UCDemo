@@ -53,12 +53,11 @@ static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
 
 + (void)uc_get:(NSString *)path params:(NSDictionary *)params target:(UCNetworkTarget *)target {
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
-    NSString *url = [[UCNetworkService shareInstance].baseURL stringByAppendingString:path];
    
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
     [mDic setValue:APPKEY forKey:@"key"];
     
-    NSURLSessionDataTask *dataTask = [manger GET:url parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSURLSessionDataTask *dataTask = [manger GET:UCURL parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
@@ -77,12 +76,11 @@ static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
 
 + (void)uc_post:(NSString *)path params:(NSDictionary *)params target:(UCNetworkTarget *)target {
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
-    NSString *url = [[UCNetworkService shareInstance].baseURL stringByAppendingString:path];
     
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
     [mDic setValue:APPKEY forKey:@"key"];
     
-    NSURLSessionDataTask *dataTask = [manger POST:url parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *dataTask = [manger POST:UCURL parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {

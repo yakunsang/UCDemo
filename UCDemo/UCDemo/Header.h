@@ -11,4 +11,7 @@
 #define Tabbar_Title_HColor [UIColor colorWithRed:19/255.0 green:34/255.0 blue:122/255.0 alpha:1]
 #define Tabbar_Title_NColor [UIColor colorWithRed:112/255.0 green:112/255.0 blue:112/255.0 alpha:1]
 
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
 #endif /* Header_h */

@@ -7,9 +7,17 @@
 //
 
 #import "NewsLeftImgCell.h"
-#import "UIColor+image.h"
-
+#import "NewsModel.h"
 @implementation NewsLeftImgCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.backgroundColor = [UIColor whiteColor];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    return self;
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -26,14 +34,19 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     // 整个内容的背景
-    [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
+    [UIColor whiteColor];
     
     // 新闻标题
-    [self.title drawInRect:CGRectMake(0, 0, CGRectGetWidth(rect)-120, 100) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+    [self.title drawInRect:CGRectMake(20, 20, self.model.titleSize.width, self.model.titleSize.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
     
     CGContextFillRect(context, rect);
     
-    
+}
+
+- (void)setModel:(NewsModel *)model {
+    _model = model;
+    self.title = model.title;
+    [self setNeedsDisplay];
 }
 
 @end
