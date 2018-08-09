@@ -10,6 +10,18 @@
 
 @implementation NewsModel
 
-
++ (NSArray<NewsModel *> *)getModelFromData:(NSDictionary *)dic {
+    NSArray *dataSource = [dic objectForKey:@"data"];
+    if (dataSource.count == 0) { return @[]; }
+    
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSDictionary *dic in dataSource) {
+        NewsModel *model = [NewsModel modelWithDictionary:dic];
+        [array addObject:model];
+    }
+    
+    
+    return array.copy;
+}
 
 @end

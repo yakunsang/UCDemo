@@ -7,9 +7,25 @@
 //
 
 #import "NewsLeftImgCell.h"
-//#import "UIColor+image.h"
+#import "NewsModel.h"
+
+@interface NewsLeftImgCell ()
+
+@property (nonatomic, strong) UIImageView *leftImgV;
+
+@end
 
 @implementation NewsLeftImgCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        _leftImgV = [UIImageView new];
+        [self.contentView addSubview:_leftImgV];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    return self;
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -22,18 +38,40 @@
     // Configure the view for the selected state
 }
 
-- (void)drawRect:(CGRect)rect {
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    // 整个内容的背景
-    [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
-    
-    // 新闻标题
-    [self.title drawInRect:CGRectMake(0, 0, CGRectGetWidth(rect)-120, 100) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
-    
-    CGContextFillRect(context, rect);
-    
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self.leftImgV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
+}
 
+- (void)drawRect:(CGRect)rect {
+    __weak __typeof(self) weakSelf = self;
+//        CGContextRef context = UIGraphicsGetCurrentContext();
+        // 整个内容的背景
+//        [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
+    
+        // 新闻标题
+        [self.title drawInRect:CGRectMake(20, 20, CGRectGetWidth(rect)-140, 100) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+        
+//        CGContextFillRect(context, rect);
+        UIImage *img = [UIColor createImageWithColor:[UIColor lightGrayColor]];
+        self.leftImgV.image = img;
+        if (self.title.length>0) {
+            [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:weakSelf.model.thumbnail_pic_s] options:YYWebImageOptionAllowBackgroundTask|YYWebImageOptionUseNSURLCache progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    weakSelf.leftImgV.image = image;
+                });
+            }];
+        }
+}
+
+- (void)setModel:(NewsModel *)model {
+    _model = model;
+    self.title = model.title;
+    [self setNeedsDisplay];
 }
 
 @end

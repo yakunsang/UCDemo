@@ -10,4 +10,6 @@
 
 @interface RecommondNews : UITableView
 
+@property (nonatomic, strong)NSMutableArray *dataArray;
+
 @end

@@ -20,6 +20,7 @@
 @property (nonatomic, copy) NSString *thumbnail_pic_s02;
 @property (nonatomic, copy) NSString *thumbnail_pic_s03;
 
++ (NSArray<NewsModel *> *)getModelFromData:(NSDictionary *)dic;
 
 @end
 
