@@ -8,6 +8,7 @@
 
 #import "NewsLeftImgCell.h"
 #import "NewsModel.h"
+<<<<<<< HEAD
 
 @interface NewsLeftImgCell ()
 
@@ -15,13 +16,19 @@
 
 @end
 
+=======
+>>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 @implementation NewsLeftImgCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+<<<<<<< HEAD
         _leftImgV = [UIImageView new];
         [self.contentView addSubview:_leftImgV];
         self.separatorInset = UIEdgeInsetsZero;
+=======
+        self.backgroundColor = [UIColor whiteColor];
+>>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
@@ -54,6 +61,7 @@
         // 整个内容的背景
 //        [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
     
+<<<<<<< HEAD
         // 新闻标题
         [self.title drawInRect:CGRectMake(20, 20, CGRectGetWidth(rect)-140, 100) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
         
@@ -67,6 +75,17 @@
                 });
             }];
         }
+=======
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 整个内容的背景
+    [UIColor whiteColor];
+    
+    // 新闻标题
+    [self.title drawInRect:CGRectMake(20, 20, self.model.titleSize.width, self.model.titleSize.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+    
+    CGContextFillRect(context, rect);
+    
+>>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 }
 
 - (void)setModel:(NewsModel *)model {

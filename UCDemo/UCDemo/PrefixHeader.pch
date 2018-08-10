@@ -16,7 +16,7 @@
 #import "UCNetworkService.h"
 #import "Header.h"
 #import "SKExtension.h"
-#import "UIColor+Image.h"
+#import "UIColor+UCImage.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
