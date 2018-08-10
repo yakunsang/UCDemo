@@ -15,18 +15,15 @@
 
 @implementation RecommondNews
 
-- (instancetype)init {
-    if (self = [super init]) {
+- (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
+    if (self = [super initWithFrame:frame style:style]) {
         self.delegate = self;
         self.dataSource = self;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.separatorInset = UIEdgeInsetsZero;
+        self.separatorColor = [UIColor clearColor];
     }
     return self;
-}
-
-- (void)addSubview:(UIView *)view {
-    if (![view isKindOfClass:[NSClassFromString(@"_UITableViewCellSeparatorView") class]] && view)
-        [super addSubview:view];
 }
 
 - (void)layoutSubviews {
@@ -55,7 +52,7 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 150;
+    return 200;
 }
 
 

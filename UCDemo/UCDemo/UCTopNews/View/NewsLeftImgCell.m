@@ -21,6 +21,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         _leftImgV = [UIImageView new];
         [self.contentView addSubview:_leftImgV];
+        self.separatorInset = UIEdgeInsetsZero;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     

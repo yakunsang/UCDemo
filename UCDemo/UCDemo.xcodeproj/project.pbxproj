@@ -14,6 +14,7 @@
 		3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC12211B1FEC002D416A /* NewsBottomOneImgCell.m */; };
 		3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC15211B2455002D416A /* NewsDefaultCell.m */; };
 		3905EC1A211B3075002D416A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC19211B3075002D416A /* NewsModel.m */; };
+		39210B5E211DA16900D02BC8 /* UITableView+SeparatorHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */; };
 		393CA89E2114440300900104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA89D2114440300900104 /* AppDelegate.m */; };
 		393CA8A12114440300900104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA8A02114440300900104 /* ViewController.m */; };
 		393CA8A42114440300900104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393CA8A22114440300900104 /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 		3905EC15211B2455002D416A /* NewsDefaultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDefaultCell.m; sourceTree = "<group>"; };
 		3905EC18211B3075002D416A /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		3905EC19211B3075002D416A /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		39210B5C211DA16900D02BC8 /* UITableView+SeparatorHidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SeparatorHidden.h"; sourceTree = "<group>"; };
+		39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SeparatorHidden.m"; sourceTree = "<group>"; };
 		393CA8992114440300900104 /* UCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393CA89C2114440300900104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		393CA89D2114440300900104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -284,6 +287,8 @@
 			children = (
 				39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */,
 				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
+				39210B5C211DA16900D02BC8 /* UITableView+SeparatorHidden.h */,
+				39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
 				39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */,
+				39210B5E211DA16900D02BC8 /* UITableView+SeparatorHidden.m in Sources */,
 				393CA8AC2114440400900104 /* main.m in Sources */,
 				398EB0CE21185BA000DF4702 /* TopNewsController.m in Sources */,
 				3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */,

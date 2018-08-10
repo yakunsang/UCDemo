@@ -32,14 +32,9 @@
 }
 
 - (void)initRecommondTable {
-        _recommondTable = [[RecommondNews alloc] init];
+        _recommondTable = [[RecommondNews alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
         
         [self.view addSubview:_recommondTable];
-        [_recommondTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.view);
-            make.left.equalTo(self.view);
-            make.size.mas_equalTo(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height));
-        }];
 }
 
 - (void)requestNews {
