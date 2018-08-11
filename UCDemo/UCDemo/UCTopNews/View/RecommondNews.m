@@ -7,15 +7,14 @@
 //
 
 #import "RecommondNews.h"
-<<<<<<< HEAD
 #import "NewsLeftImgCell.h"
-=======
 #import "BaseNewsCell.h"
 #import "NewsLeftImgCell.h"
 #import "NewsDefaultCell.h"
+#import "FreeNewsModel.h"
+
 static NSString *cellIdentifier = @"BaseNewsCell";
 static NSString *cellLeftIdentifier = @"CellLeftImage";
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 
 @interface RecommondNews ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,11 +27,8 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
         self.delegate = self;
         self.dataSource = self;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
-<<<<<<< HEAD
         self.separatorInset = UIEdgeInsetsZero;
         self.separatorColor = [UIColor clearColor];
-=======
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
     }
     return self;
 }
@@ -44,8 +40,7 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
 #pragma mark tableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-<<<<<<< HEAD
-    return self.dataArray.count;
+    return self.dataArray.count?self.dataArray.count:10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,47 +52,29 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
     cell.separatorInset = UIEdgeInsetsZero;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.separatorInset = UIEdgeInsetsMake(0.f, cell.bounds.size.width, 0.f, 0.f);
-    cell.model = self.dataArray[indexPath.row];
-=======
-    return self.dataArray.count>0?self.dataArray.count:10;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.dataArray.count == 0) {
-        NewsDefaultCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-        if (!cell) {
-            cell = [[NewsDefaultCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        }
-        
-        return cell;
+    if (self.dataArray.count>0) {
+        cell.model = self.dataArray[indexPath.row];
     }
-    
-    NewsLeftImgCell *cell = [tableView dequeueReusableCellWithIdentifier:cellLeftIdentifier];
-    if (!cell) {
-        cell = [[NewsLeftImgCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellLeftIdentifier];
-    } 
-    cell.model = self.dataArray[indexPath.row];
     return cell;
 }
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"%ld",indexPath.row);
+}
+
 
 - (void)tableView:(UITableView *)tableView prefetchRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
     
-    return cell;
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-<<<<<<< HEAD
-    return 200;
+    FreeNewsModel *model = self.dataArray[indexPath.row];
+    if (model.cellSize.height!=0) {
+        return model.cellSize.height;
+    }
+    return 150;
 }
 
-
-=======
-    return 130;
-}
-
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 - (void)setDataArray:(NSMutableArray *)dataArray {
     _dataArray = dataArray;
     [self reloadData];

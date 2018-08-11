@@ -25,18 +25,15 @@
 @property (nonatomic, copy) NSString *thumbnail_pic_s02;
 @property (nonatomic, copy) NSString *thumbnail_pic_s03;
 
-<<<<<<< HEAD
-+ (NSArray<NewsModel *> *)getModelFromData:(NSDictionary *)dic;
-=======
 // Size
 @property (nonatomic, assign) CGSize titleSize;
 @property (nonatomic, assign) CGSize autherSize;
 @property (nonatomic, assign) CGSize dateSize;
+@property (nonatomic, assign) CGSize cellSize;
 
 + (NSArray<NewsModel *>*)getModelsWithDic:(NSDictionary *)dic;
 
 
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 
 @end
 

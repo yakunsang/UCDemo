@@ -20,12 +20,11 @@ abstract_target 'UCTarget' do
     target 'UCDemo' do
         project 'UCDemo/UCDemo'
 	    pod 'Masonry', '~> 1.1.0'
-            pod "SSZipArchive", "1.7"
-            pod "YYKit", "1.0.9"
+        pod "SSZipArchive", "1.7"
+        pod "YYKit", "1.0.9"
 	    pod 'MJRefresh', '~> 3.1.15.3'        
-            pod 'EasyReact'
-            pod 'WHDebugTool', '~> 1.3'
-            pod 'MLeaksFinder'
+        pod 'EasyReact'
+        pod 'WHDebugTool', '~> 1.3'
 	    pod 'AFNetworking', '~> 3.2.1'
     end
 end

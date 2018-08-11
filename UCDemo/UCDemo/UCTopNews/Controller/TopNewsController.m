@@ -8,16 +8,13 @@
 
 #import "TopNewsController.h"
 #import "RecommondNews.h"
-#import "NewsModel.h"
+#import "FreeNewsModel.h"
 
 @interface TopNewsController ()
 
 @property (nonatomic, strong) RecommondNews *recommondTable;
-@property (nonatomic, strong) NSMutableArray<NewsModel *> *dataArray;
-<<<<<<< HEAD
+@property (nonatomic, strong) NSMutableArray<FreeNewsModel *> *dataArray;
 
-=======
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 @end
 
 @implementation TopNewsController
@@ -26,14 +23,11 @@
     self.recommondTable.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self requestTopNews];
     [super viewDidLoad];
-    [self initRecommondTable];
-    [self requestNews];
     // Do any additional setup after loading the view.
 }
 - (RecommondNews *)recommondTable {
     if(!_recommondTable) {
         _recommondTable = [[RecommondNews alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
-        
         [self.view addSubview:_recommondTable];
     }
     
@@ -45,16 +39,10 @@
     target.successSelector = @selector(requestSuccess:);
     target.failedSelector = @selector(requestFaild:);
     
-    [UCNetworkService uc_get:@"" params:@{@"type":@"top"} target:target];
+    [UCNetworkService uc_get:@"" params:@{} target:target];
 }
 
-- (void)requestSuccess:(id)response {
-    NSDictionary *result = response[@"result"];
-    if ([result isKindOfClass:[NSDictionary class]]) {
-        self.dataArray = [NewsModel getModelsWithDic:result].mutableCopy;
-        self.recommondTable.dataArray = self.dataArray;
-    }
-}
+
 
 - (void)requestFaild:(NSError *)error {
     
@@ -71,20 +59,24 @@
         [self.view addSubview:_recommondTable];
 }
 
-- (void)requestNews {
-    UCNetworkTarget *target = [UCNetworkTarget initWithTarget:self];
-    target.successSelector = @selector(requestSuccess:);
-    target.failedSelector = @selector(requestFail:);
-    
-    [UCNetworkService uc_get:@"" params:@{@"type":@"top"} target:target];
-}
 
 - (void)requestSuccess:(id)response {
-    NSDictionary *result = response[@"result"];
+    NSDictionary *data = response[@"data"];
     
-    if (result&&[result isKindOfClass:[NSDictionary class]]) {
-        self.dataArray = [NewsModel getModelFromData:result].mutableCopy;
-        self.recommondTable.dataArray = self.dataArray;
+    if (data&&[data isKindOfClass:[NSDictionary class]]) {
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSArray *touTiaoArray = data[@"toutiao"];
+            self.dataArray = [FreeNewsModel getModelsfromArray:touTiaoArray].mutableCopy;
+            dispatch_semaphore_signal(semaphore);
+        });
+        dispatch_async(dispatch_get_main_queue(), ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            self.recommondTable.dataArray = self.dataArray;
+            dispatch_semaphore_signal(semaphore);
+        });
+
     }
 }
 

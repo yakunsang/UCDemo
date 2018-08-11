@@ -7,13 +7,10 @@
 //
 
 #import "BaseNewsCell.h"
-@class NewsModel;
-<<<<<<< HEAD
+@class FreeNewsModel;
 
-=======
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 @interface NewsLeftImgCell : BaseNewsCell
 
-@property (nonatomic, strong) NewsModel *model;
+@property (nonatomic, strong) FreeNewsModel *model;
 
 @end

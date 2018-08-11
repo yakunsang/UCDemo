@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class NewsModel;
+@class FreeNewsModel;
 @interface RecommondNews : UITableView
 
-<<<<<<< HEAD
-@property (nonatomic, strong)NSMutableArray *dataArray;
-=======
-@property (nonatomic, strong) NSMutableArray<NewsModel *> *dataArray;
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
+@property (nonatomic, strong) NSMutableArray<FreeNewsModel *> *dataArray;
 
 @end

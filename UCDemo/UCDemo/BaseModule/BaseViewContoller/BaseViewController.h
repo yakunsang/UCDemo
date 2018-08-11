@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UITableViewController
+@interface BaseViewController : UIViewController
 
 - (void)initNavigation;
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901583B211EAC62000582FB /* FreeNewsModel.m */; };
 		3905EC07211B19A1002D416A /* RecommondNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC06211B19A1002D416A /* RecommondNews.m */; };
 		3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC09211B1D8B002D416A /* BaseNewsCell.m */; };
 		3905EC0D211B1F72002D416A /* NewsLeftImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC0C211B1F72002D416A /* NewsLeftImgCell.m */; };
@@ -14,12 +15,6 @@
 		3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC12211B1FEC002D416A /* NewsBottomOneImgCell.m */; };
 		3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC15211B2455002D416A /* NewsDefaultCell.m */; };
 		3905EC1A211B3075002D416A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC19211B3075002D416A /* NewsModel.m */; };
-<<<<<<< HEAD
-		39210B5E211DA16900D02BC8 /* UITableView+SeparatorHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */; };
-=======
-		39133EE9211C6FCC00186FD8 /* UIColor+UCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */; };
-		39133EEC211C925100186FD8 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39133EEB211C925100186FD8 /* NSString+Additions.m */; };
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 		393CA89E2114440300900104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA89D2114440300900104 /* AppDelegate.m */; };
 		393CA8A12114440300900104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA8A02114440300900104 /* ViewController.m */; };
 		393CA8A42114440300900104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393CA8A22114440300900104 /* Main.storyboard */; };
@@ -46,6 +41,8 @@
 		14C82A151ADE7B673B9EC06A /* libPods-UCTarget-UCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCTarget-UCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D91B6F986F0FCDBA00DF879 /* Pods-UCTarget-UCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCTarget-UCDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-UCTarget-UCDemo/Pods-UCTarget-UCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		34404E430050F9357CAD53DC /* Pods-UCTarget-UCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCTarget-UCDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-UCTarget-UCDemo/Pods-UCTarget-UCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3901583A211EAC62000582FB /* FreeNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeNewsModel.h; sourceTree = "<group>"; };
+		3901583B211EAC62000582FB /* FreeNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeNewsModel.m; sourceTree = "<group>"; };
 		3905EC05211B19A1002D416A /* RecommondNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommondNews.h; sourceTree = "<group>"; };
 		3905EC06211B19A1002D416A /* RecommondNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommondNews.m; sourceTree = "<group>"; };
 		3905EC08211B1D8B002D416A /* BaseNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNewsCell.h; sourceTree = "<group>"; };
@@ -60,15 +57,6 @@
 		3905EC15211B2455002D416A /* NewsDefaultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDefaultCell.m; sourceTree = "<group>"; };
 		3905EC18211B3075002D416A /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		3905EC19211B3075002D416A /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		39210B5C211DA16900D02BC8 /* UITableView+SeparatorHidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SeparatorHidden.h"; sourceTree = "<group>"; };
-		39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SeparatorHidden.m"; sourceTree = "<group>"; };
-=======
-		39133EE7211C6FCC00186FD8 /* UIColor+UCImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+UCImage.h"; sourceTree = "<group>"; };
-		39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UCImage.m"; sourceTree = "<group>"; };
-		39133EEA211C925100186FD8 /* NSString+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
-		39133EEB211C925100186FD8 /* NSString+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 		393CA8992114440300900104 /* UCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393CA89C2114440300900104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		393CA89D2114440300900104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +143,8 @@
 			children = (
 				3905EC18211B3075002D416A /* NewsModel.h */,
 				3905EC19211B3075002D416A /* NewsModel.m */,
+				3901583A211EAC62000582FB /* FreeNewsModel.h */,
+				3901583B211EAC62000582FB /* FreeNewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,10 +152,8 @@
 		39133EE6211C6FB000186FD8 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
-				39133EE7211C6FCC00186FD8 /* UIColor+UCImage.h */,
-				39133EE8211C6FCC00186FD8 /* UIColor+UCImage.m */,
-				39133EEA211C925100186FD8 /* NSString+Additions.h */,
-				39133EEB211C925100186FD8 /* NSString+Additions.m */,
+				39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */,
+				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -173,11 +161,7 @@
 		393CA8902114440300900104 = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				39F5F8ED211C166700A3ED49 /* Category */,
-=======
 				39133EE6211C6FB000186FD8 /* Categroy */,
->>>>>>> 62196b04de44404b1cfec32386618342f8cc2030
 				393CA89B2114440300900104 /* UCDemo */,
 				393CA89A2114440300900104 /* Products */,
 				7F2A1C6B9058B74023ED849C /* Pods */,
@@ -309,17 +293,6 @@
 			path = BaseViewContoller;
 			sourceTree = "<group>";
 		};
-		39F5F8ED211C166700A3ED49 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */,
-				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
-				39210B5C211DA16900D02BC8 /* UITableView+SeparatorHidden.h */,
-				39210B5D211DA16900D02BC8 /* UITableView+SeparatorHidden.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		7F2A1C6B9058B74023ED849C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39133EE9211C6FCC00186FD8 /* UIColor+UCImage.m in Sources */,
 				3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */,
 				398EB0CB211859DD00DF4702 /* TabbarViewController.m in Sources */,
 				398EB0C3211823A100DF4702 /* UCNetworkService.m in Sources */,
@@ -458,7 +430,7 @@
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
 				39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */,
-				39210B5E211DA16900D02BC8 /* UITableView+SeparatorHidden.m in Sources */,
+				3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */,
 				393CA8AC2114440400900104 /* main.m in Sources */,
 				398EB0CE21185BA000DF4702 /* TopNewsController.m in Sources */,
 				3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */,
@@ -467,7 +439,6 @@
 				3905EC0D211B1F72002D416A /* NewsLeftImgCell.m in Sources */,
 				393CA8C32114494D00900104 /* UCNetworkTarget.m in Sources */,
 				3905EC07211B19A1002D416A /* RecommondNews.m in Sources */,
-				39133EEC211C925100186FD8 /* NSString+Additions.m in Sources */,
 				3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */,
 				393CA89E2114440300900104 /* AppDelegate.m in Sources */,
 				393CA8C92114515900900104 /* BaseViewController.m in Sources */,

@@ -14,6 +14,7 @@
 static NSString  *const UCNetworkServiceLockName = @"com.ucnetworkservice.lock.name";
 static NSString  *const UCURL = @"http://v.juhe.cn/toutiao/index";
 static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
+static NSString  *const FreeNews = @"https://www.apiopen.top/journalismApi";
 
 @interface UCNetworkService()
 
@@ -55,9 +56,9 @@ static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
    
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
-    [mDic setValue:APPKEY forKey:@"key"];
+//    [mDic setValue:APPKEY forKey:@"key"];
     
-    NSURLSessionDataTask *dataTask = [manger GET:UCURL parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSURLSessionDataTask *dataTask = [manger GET:FreeNews parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
@@ -78,9 +79,9 @@ static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
     
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
-    [mDic setValue:APPKEY forKey:@"key"];
+//    [mDic setValue:APPKEY forKey:@"key"];
     
-    NSURLSessionDataTask *dataTask = [manger POST:UCURL parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *dataTask = [manger POST:FreeNews parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
