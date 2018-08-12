@@ -33,3 +33,9 @@
 @property(nonatomic, strong) NSString *name;
 
 @end
+
+@protocol NewsDetailModule<BaseModule>
+
+@property (nonatomic, copy) NSString *url;
+
+@end;

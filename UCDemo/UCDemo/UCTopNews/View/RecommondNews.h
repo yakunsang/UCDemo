@@ -11,5 +11,5 @@
 @interface RecommondNews : UITableView
 
 @property (nonatomic, strong) NSMutableArray<FreeNewsModel *> *dataArray;
-
+@property (nonatomic, weak) UIViewController *vc;
 @end

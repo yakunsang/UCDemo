@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901583B211EAC62000582FB /* FreeNewsModel.m */; };
+		3901583F211EE12C000582FB /* UIView+Somo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901583E211EE12C000582FB /* UIView+Somo.m */; };
+		39015842211EE2C0000582FB /* SomoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015841211EE2C0000582FB /* SomoView.m */; };
+		39015847211F0AF1000582FB /* SomoCellDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015846211F0AF1000582FB /* SomoCellDataProvider.m */; };
+		3901584A211F0C22000582FB /* SomoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015849211F0C22000582FB /* SomoViewCell.m */; };
+		3901584D211F2949000582FB /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901584C211F2949000582FB /* NewsDetailController.m */; };
+		39015850211F2CA8000582FB /* NewsDetailModuleSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901584F211F2CA8000582FB /* NewsDetailModuleSI.m */; };
 		3905EC07211B19A1002D416A /* RecommondNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC06211B19A1002D416A /* RecommondNews.m */; };
 		3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC09211B1D8B002D416A /* BaseNewsCell.m */; };
 		3905EC0D211B1F72002D416A /* NewsLeftImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC0C211B1F72002D416A /* NewsLeftImgCell.m */; };
@@ -43,6 +49,19 @@
 		34404E430050F9357CAD53DC /* Pods-UCTarget-UCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCTarget-UCDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-UCTarget-UCDemo/Pods-UCTarget-UCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3901583A211EAC62000582FB /* FreeNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeNewsModel.h; sourceTree = "<group>"; };
 		3901583B211EAC62000582FB /* FreeNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeNewsModel.m; sourceTree = "<group>"; };
+		3901583D211EE12C000582FB /* UIView+Somo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Somo.h"; sourceTree = "<group>"; };
+		3901583E211EE12C000582FB /* UIView+Somo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Somo.m"; sourceTree = "<group>"; };
+		39015840211EE2C0000582FB /* SomoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoView.h; sourceTree = "<group>"; };
+		39015841211EE2C0000582FB /* SomoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoView.m; sourceTree = "<group>"; };
+		39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoSkeletonLayoutProtocl.h; sourceTree = "<group>"; };
+		39015845211F0AF1000582FB /* SomoCellDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoCellDataProvider.h; sourceTree = "<group>"; };
+		39015846211F0AF1000582FB /* SomoCellDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoCellDataProvider.m; sourceTree = "<group>"; };
+		39015848211F0C22000582FB /* SomoViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoViewCell.h; sourceTree = "<group>"; };
+		39015849211F0C22000582FB /* SomoViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoViewCell.m; sourceTree = "<group>"; };
+		3901584B211F2949000582FB /* NewsDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailController.h; sourceTree = "<group>"; };
+		3901584C211F2949000582FB /* NewsDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
+		3901584E211F2CA8000582FB /* NewsDetailModuleSI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailModuleSI.h; sourceTree = "<group>"; };
+		3901584F211F2CA8000582FB /* NewsDetailModuleSI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailModuleSI.m; sourceTree = "<group>"; };
 		3905EC05211B19A1002D416A /* RecommondNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommondNews.h; sourceTree = "<group>"; };
 		3905EC06211B19A1002D416A /* RecommondNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommondNews.m; sourceTree = "<group>"; };
 		3905EC08211B1D8B002D416A /* BaseNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNewsCell.h; sourceTree = "<group>"; };
@@ -110,11 +129,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39015844211F0AB3000582FB /* SomoCellDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				39015845211F0AF1000582FB /* SomoCellDataProvider.h */,
+				39015846211F0AF1000582FB /* SomoCellDataProvider.m */,
+				39015848211F0C22000582FB /* SomoViewCell.h */,
+				39015849211F0C22000582FB /* SomoViewCell.m */,
+			);
+			path = SomoCellDataProvider;
+			sourceTree = "<group>";
+		};
 		390FBD5F211AD311002F8F6D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				398EB0CC21185BA000DF4702 /* TopNewsController.h */,
 				398EB0CD21185BA000DF4702 /* TopNewsController.m */,
+				3901584B211F2949000582FB /* NewsDetailController.h */,
+				3901584C211F2949000582FB /* NewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +186,11 @@
 			children = (
 				39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */,
 				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
+				3901583D211EE12C000582FB /* UIView+Somo.h */,
+				3901583E211EE12C000582FB /* UIView+Somo.m */,
+				39015840211EE2C0000582FB /* SomoView.h */,
+				39015841211EE2C0000582FB /* SomoView.m */,
+				39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -268,6 +305,8 @@
 				393CA8BA2114494000900104 /* ModuleASI.m */,
 				393CA8BE2114494000900104 /* OHGRouter.h */,
 				393CA8BC2114494000900104 /* OHGRouter.m */,
+				3901584E211F2CA8000582FB /* NewsDetailModuleSI.h */,
+				3901584F211F2CA8000582FB /* NewsDetailModuleSI.m */,
 			);
 			path = UCProtocolModule;
 			sourceTree = "<group>";
@@ -275,6 +314,7 @@
 		393CA8C52114511900900104 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
+				39015844211F0AB3000582FB /* SomoCellDataProvider */,
 				393CA8C62114512300900104 /* BaseViewContoller */,
 			);
 			path = BaseModule;
@@ -422,12 +462,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */,
+				39015847211F0AF1000582FB /* SomoCellDataProvider.m in Sources */,
 				398EB0CB211859DD00DF4702 /* TabbarViewController.m in Sources */,
 				398EB0C3211823A100DF4702 /* UCNetworkService.m in Sources */,
 				393CA8A12114440300900104 /* ViewController.m in Sources */,
+				39015842211EE2C0000582FB /* SomoView.m in Sources */,
 				398EB0D721185BDB00DF4702 /* VedioController.m in Sources */,
 				398EB0C72118486C00DF4702 /* BaseNavigaionController.m in Sources */,
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
+				3901583F211EE12C000582FB /* UIView+Somo.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
 				39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */,
 				3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */,
@@ -435,7 +478,9 @@
 				398EB0CE21185BA000DF4702 /* TopNewsController.m in Sources */,
 				3905EC0A211B1D8B002D416A /* BaseNewsCell.m in Sources */,
 				398EB0DA21185C1400DF4702 /* MyViewController.m in Sources */,
+				39015850211F2CA8000582FB /* NewsDetailModuleSI.m in Sources */,
 				398EB0D421185BCD00DF4702 /* MenuController.m in Sources */,
+				3901584A211F0C22000582FB /* SomoViewCell.m in Sources */,
 				3905EC0D211B1F72002D416A /* NewsLeftImgCell.m in Sources */,
 				393CA8C32114494D00900104 /* UCNetworkTarget.m in Sources */,
 				3905EC07211B19A1002D416A /* RecommondNews.m in Sources */,
@@ -445,6 +490,7 @@
 				398EB0DD211861E900DF4702 /* WindowsController.m in Sources */,
 				3905EC10211B1FD2002D416A /* NewsBottomThreeImgCell.m in Sources */,
 				393CA8C02114494000900104 /* OHGRouter.m in Sources */,
+				3901584D211F2949000582FB /* NewsDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
