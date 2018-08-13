@@ -188,9 +188,6 @@
 				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
 				3901583D211EE12C000582FB /* UIView+Somo.h */,
 				3901583E211EE12C000582FB /* UIView+Somo.m */,
-				39015840211EE2C0000582FB /* SomoView.h */,
-				39015841211EE2C0000582FB /* SomoView.m */,
-				39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -314,6 +311,10 @@
 		393CA8C52114511900900104 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
+				39015840211EE2C0000582FB /* SomoView.h */,
+				39015841211EE2C0000582FB /* SomoView.m */,
+				39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */,
+				3959757E2121D38F00644E68 /* SomoView */,
 				39015844211F0AB3000582FB /* SomoCellDataProvider */,
 				393CA8C62114512300900104 /* BaseViewContoller */,
 			);
@@ -331,6 +332,13 @@
 				398EB0CA211859DD00DF4702 /* TabbarViewController.m */,
 			);
 			path = BaseViewContoller;
+			sourceTree = "<group>";
+		};
+		3959757E2121D38F00644E68 /* SomoView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SomoView;
 			sourceTree = "<group>";
 		};
 		7F2A1C6B9058B74023ED849C /* Pods */ = {

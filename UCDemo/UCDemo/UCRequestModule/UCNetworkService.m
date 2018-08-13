@@ -10,11 +10,16 @@
 #import "UCNetworkService.h"
 #import "UCNetworkTarget.h"
 #import "AFNetworking.h"
-
+// JuHeApi
 static NSString  *const UCNetworkServiceLockName = @"com.ucnetworkservice.lock.name";
 static NSString  *const UCURL = @"http://v.juhe.cn/toutiao/index";
 static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
-static NSString  *const FreeNews = @"https://www.apiopen.top/journalismApi";
+// FreeApi
+static NSString  *const FreeNewsURL = @"https://www.apiopen.top/journalismApi";
+// ShowApi
+static NSString  *const ShowApiURL = @"http://route.showapi.com/109-34";
+static NSString  *const ShowAPPiD = @"72247";
+static NSString  *const ShowAPPSecret = @"8bf94d7d1e814a86878ec4adc7b9a4a5";
 
 @interface UCNetworkService()
 
@@ -56,9 +61,9 @@ static NSString  *const FreeNews = @"https://www.apiopen.top/journalismApi";
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
    
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
-//    [mDic setValue:APPKEY forKey:@"key"];
-    
-    NSURLSessionDataTask *dataTask = [manger GET:FreeNews parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
+    [mDic setValue:ShowAPPiD forKey:@"showapi_appid"];
+    [mDic setValue:ShowAPPSecret forKey:@"showapi_sign"];
+    NSURLSessionDataTask *dataTask = [manger GET:ShowApiURL parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
@@ -79,9 +84,9 @@ static NSString  *const FreeNews = @"https://www.apiopen.top/journalismApi";
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
     
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
-//    [mDic setValue:APPKEY forKey:@"key"];
-    
-    NSURLSessionDataTask *dataTask = [manger POST:FreeNews parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
+    [mDic setValue:ShowAPPiD forKey:@"showapi_appid"];
+    [mDic setValue:ShowAPPSecret forKey:@"showapi_sign"];
+    NSURLSessionDataTask *dataTask = [manger POST:ShowApiURL parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {

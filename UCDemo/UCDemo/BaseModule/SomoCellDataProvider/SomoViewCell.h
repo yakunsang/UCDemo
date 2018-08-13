@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SomoSkeletonLayoutProtocl.h"
 #import "BaseNewsCell.h"
+#import "SomoSkeletonLayoutProtocl.h"
 
 @interface SomoViewCell : BaseNewsCell<SomoSkeletonLayoutProtocl>
 
