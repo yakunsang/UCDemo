@@ -659,7 +659,6 @@
 					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
 					"\"${PODS_ROOT}/Headers/Public/WHDebugTool\"",
 					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
-					"$(SRCROOT)/SKExtension/SKExtension/SKExtension",
 				);
 				INFOPLIST_FILE = UCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -701,7 +700,6 @@
 					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
 					"\"${PODS_ROOT}/Headers/Public/WHDebugTool\"",
 					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
-					"$(SRCROOT)/SKExtension/SKExtension/SKExtension",
 				);
 				INFOPLIST_FILE = UCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
