@@ -458,7 +458,6 @@
 		CAED96D794497A440AE73DEDD2045E70 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 712C22D8EEFDC31DDA6EE20BAE69C858 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CAFC9622F9174BACE6787BC24E3E4444 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EBF2AE9A30CD86EA64F5F9499F3A3A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB250FD67ABE8FAA9E0E198432C77D59 /* NSDate+SKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = D83ECD4BAFA84047EE5B6AC6A86D6335 /* NSDate+SKFoundation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CB7B80B8494D234BD82E5EDB3CCDD3BD /* UIColor+image.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C019554FBE62911475232E99485C2 /* UIColor+image.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CB89519C2BAD2C1BD1CA605A21A8ED13 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C04C3C27FEC3C159AC7A02545383800 /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CBD03A66D8324E3F5CBC333BC36D2E07 /* YYTextMagnifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B83D06F8F19F7C356D5F4712AAE8B5 /* YYTextMagnifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBD7FFF83E931C5CC64A073F3457A1F6 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A02C3BAB94A6B817D4EAA13FD409F7E6 /* MJRefreshBackStateFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3326,7 +3325,6 @@
 				75C307C5D07C64B68BAF1609A1694A08 /* UIButton+SKClickInterval.m in Sources */,
 				2701B11A1152C6B9809E736DD02C1740 /* UIButton+SKVerticalLayout.m in Sources */,
 				7A53BA04051B096FB340DFC441EB5842 /* UIButton+SKWebCache.m in Sources */,
-				CB7B80B8494D234BD82E5EDB3CCDD3BD /* UIColor+image.m in Sources */,
 				6ADC976B32EC859F2717E0D579B866F3 /* UIImage+SKFoundation.m in Sources */,
 				6BC327594A70F749297FD568900A83D9 /* UIImageView+SKWebCache.m in Sources */,
 				68BFFF797A65F9035AE7DBD59F6DDE33 /* UILabel+SKHeight.m in Sources */,
