@@ -39,6 +39,9 @@
 		398EB0D721185BDB00DF4702 /* VedioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0D621185BDB00DF4702 /* VedioController.m */; };
 		398EB0DA21185C1400DF4702 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0D921185C1400DF4702 /* MyViewController.m */; };
 		398EB0DD211861E900DF4702 /* WindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB0DC211861E900DF4702 /* WindowsController.m */; };
+		399614C221226C5A00D1D91D /* SAChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 399614C121226C5A00D1D91D /* SAChannelModel.m */; };
+		399614C52122AF7B00D1D91D /* SAContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 399614C42122AF7B00D1D91D /* SAContentModel.m */; };
+		399614C82122B4F100D1D91D /* NSString+UCHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 399614C72122B4F100D1D91D /* NSString+UCHeight.m */; };
 		39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */; };
 		57D044D1957F3F847F148E68 /* libPods-UCTarget-UCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C82A151ADE7B673B9EC06A /* libPods-UCTarget-UCDemo.a */; };
 /* End PBXBuildFile section */
@@ -113,6 +116,12 @@
 		398EB0D921185C1400DF4702 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		398EB0DB211861E900DF4702 /* WindowsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowsController.h; sourceTree = "<group>"; };
 		398EB0DC211861E900DF4702 /* WindowsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowsController.m; sourceTree = "<group>"; };
+		399614C021226C5A00D1D91D /* SAChannelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAChannelModel.h; sourceTree = "<group>"; };
+		399614C121226C5A00D1D91D /* SAChannelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAChannelModel.m; sourceTree = "<group>"; };
+		399614C32122AF7B00D1D91D /* SAContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAContentModel.h; sourceTree = "<group>"; };
+		399614C42122AF7B00D1D91D /* SAContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContentModel.m; sourceTree = "<group>"; };
+		399614C62122B4F100D1D91D /* NSString+UCHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+UCHeight.h"; sourceTree = "<group>"; };
+		399614C72122B4F100D1D91D /* NSString+UCHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+UCHeight.m"; sourceTree = "<group>"; };
 		39F5F8EE211C16BD00A3ED49 /* UIColor+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Image.h"; sourceTree = "<group>"; };
 		39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +186,10 @@
 				3905EC19211B3075002D416A /* NewsModel.m */,
 				3901583A211EAC62000582FB /* FreeNewsModel.h */,
 				3901583B211EAC62000582FB /* FreeNewsModel.m */,
+				399614C021226C5A00D1D91D /* SAChannelModel.h */,
+				399614C121226C5A00D1D91D /* SAChannelModel.m */,
+				399614C32122AF7B00D1D91D /* SAContentModel.h */,
+				399614C42122AF7B00D1D91D /* SAContentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +201,8 @@
 				39F5F8EF211C16BD00A3ED49 /* UIColor+Image.m */,
 				3901583D211EE12C000582FB /* UIView+Somo.h */,
 				3901583E211EE12C000582FB /* UIView+Somo.m */,
+				399614C62122B4F100D1D91D /* NSString+UCHeight.h */,
+				399614C72122B4F100D1D91D /* NSString+UCHeight.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -480,6 +495,8 @@
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
 				3901583F211EE12C000582FB /* UIView+Somo.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
+				399614C52122AF7B00D1D91D /* SAContentModel.m in Sources */,
+				399614C82122B4F100D1D91D /* NSString+UCHeight.m in Sources */,
 				39F5F8F0211C16BD00A3ED49 /* UIColor+Image.m in Sources */,
 				3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */,
 				393CA8AC2114440400900104 /* main.m in Sources */,
@@ -493,6 +510,7 @@
 				393CA8C32114494D00900104 /* UCNetworkTarget.m in Sources */,
 				3905EC07211B19A1002D416A /* RecommondNews.m in Sources */,
 				3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */,
+				399614C221226C5A00D1D91D /* SAChannelModel.m in Sources */,
 				393CA89E2114440300900104 /* AppDelegate.m in Sources */,
 				393CA8C92114515900900104 /* BaseViewController.m in Sources */,
 				398EB0DD211861E900DF4702 /* WindowsController.m in Sources */,

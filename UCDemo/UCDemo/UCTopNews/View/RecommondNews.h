@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class FreeNewsModel;
+@class SAContentModel;
 @interface RecommondNews : UITableView
 
-@property (nonatomic, strong) NSMutableArray<FreeNewsModel *> *dataArray;
+@property (nonatomic, strong) NSMutableArray<SAContentModel *> *dataArray;
 @property (nonatomic, weak) UIViewController *vc;
 @end

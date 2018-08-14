@@ -7,8 +7,7 @@
 //
 
 #import "NewsDefaultCell.h"
-
-static CGFloat titleWidth = 150;
+#import "SAContentModel.h"
 
 @implementation NewsDefaultCell
 
@@ -22,6 +21,7 @@ static CGFloat titleWidth = 150;
 
     // Configure the view for the selected state
 }
+
 //1, 初始化时,没有设置rect大小,将直接导致drawrect不被自动调用
 //2, drawrect调用是在Controller->loadView, Controller->viewdidload之后调用的
 //3, drawrect是在sizeToFit调用后被调用,sizeToFit会自动调用sizeThatFits 子类应该重写SizeThatFits sizeToFit可手动调用 (sizeToFit,SizeThatFits只对本身负责,对subview无作用)
@@ -30,18 +30,35 @@ static CGFloat titleWidth = 150;
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+//    __weak __typeof(self) weakSelf = self;
+    self.leftImgV.image = nil;
+    if (self.model.title.length == 0) return; // 空数据返回
+    CGContextRef context = UIGraphicsGetCurrentContext();
     
-    UILabel *titleView = [UILabel new];
-    titleView.backgroundColor = [UIColor lightGrayColor];
-    [titleView drawTextInRect:CGRectMake(20, 20, titleWidth, 44)];
+    // 新闻标题
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:18],NSFontAttributeName, nil];
+    [self.model.title drawInRect:CGRectMake(SIZE_GAP_LEFT, SIZE_GAP_TOP, self.model.titleSize.width, self.model.titleSize.height) withAttributes:dic];
     
-    UILabel *subView = [UILabel new];
-    subView.backgroundColor = [UIColor lightGrayColor];
-    [subView drawTextInRect:CGRectMake(20, 84, titleWidth*2/3, 44)];
+    //subTitle
+    self.leftImgV.image = nil;
+    [self.model.desc drawInRect:CGRectMake(SIZE_GAP_LEFT, self.model.titleSize.height+SIZE_GAP_TOP+SIZE_GAP_SMALL, self.model.descSize.width, self.model.descSize.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13],NSForegroundColorAttributeName:[UIColor lightGrayColor]}];
     
-    UILabel *imgView = [UILabel new];
-    imgView.backgroundColor = [UIColor grayColor];
-    [imgView drawTextInRect:CGRectMake(rect.size.width-100, rect.size.height/2-40, 80, 80)];
+    // 作者
+    [self.model.source drawInRect:CGRectMake(SIZE_GAP_LEFT, SIZE_GAP_TOP + self.model.descSize.height + SIZE_GAP_SMALL*2+self.model.titleSize.height, self.model.autherSize.width, self.model.autherSize.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor lightGrayColor]}];
+    
+    // 下划线
+    CGFloat totalHeight = 0.0;
+    totalHeight = SIZE_GAP_TOP*2 + SIZE_GAP_SMALL*2 +self.model.titleSize.height + self.model.descSize.height+self.model.autherSize.height;
+    
+    CGContextSetStrokeColorWithColor(context, [UIColor lightGrayColor].CGColor);
+    CGContextSetLineWidth(context, 0.5);
+    CGContextMoveToPoint(context, SIZE_GAP_LEFT, totalHeight-0.5);
+    CGContextAddLineToPoint(context,SCREEN_WIDTH -SIZE_GAP_LEFT , totalHeight-0.5);
+    CGContextStrokePath(context);
 }
 
+- (void)setModel:(SAContentModel *)model {
+    [super setModel:model];
+    [self setNeedsDisplay];
+}
 @end

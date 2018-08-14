@@ -17,7 +17,6 @@ static NSString  *const APPKEY = @"55e6b6a2b542d13b2f5197125b1c48fc";
 // FreeApi
 static NSString  *const FreeNewsURL = @"https://www.apiopen.top/journalismApi";
 // ShowApi
-static NSString  *const ShowApiURL = @"http://route.showapi.com/109-34";
 static NSString  *const ShowAPPiD = @"72247";
 static NSString  *const ShowAPPSecret = @"8bf94d7d1e814a86878ec4adc7b9a4a5";
 
@@ -63,7 +62,7 @@ static NSString  *const ShowAPPSecret = @"8bf94d7d1e814a86878ec4adc7b9a4a5";
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
     [mDic setValue:ShowAPPiD forKey:@"showapi_appid"];
     [mDic setValue:ShowAPPSecret forKey:@"showapi_sign"];
-    NSURLSessionDataTask *dataTask = [manger GET:ShowApiURL parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSURLSessionDataTask *dataTask = [manger GET:path parameters:mDic progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {
@@ -86,7 +85,7 @@ static NSString  *const ShowAPPSecret = @"8bf94d7d1e814a86878ec4adc7b9a4a5";
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:params];
     [mDic setValue:ShowAPPiD forKey:@"showapi_appid"];
     [mDic setValue:ShowAPPSecret forKey:@"showapi_sign"];
-    NSURLSessionDataTask *dataTask = [manger POST:ShowApiURL parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
+    NSURLSessionDataTask *dataTask = [manger POST:path parameters:mDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (target.successSelector) {

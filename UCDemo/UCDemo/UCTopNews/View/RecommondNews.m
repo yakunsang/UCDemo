@@ -11,7 +11,7 @@
 #import "BaseNewsCell.h"
 #import "NewsLeftImgCell.h"
 #import "NewsDefaultCell.h"
-#import "FreeNewsModel.h"
+#import "SAContentModel.h"
 #import "SomoCellDataProvider.h"
 
 
@@ -33,28 +33,24 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
         self.separatorColor = [UIColor clearColor];
         
         [self initSomoDataProvider];
-        self.delegate = _somoDataProvider;
-        self.dataSource = _somoDataProvider;
     }
     return self;
 }
 
 - (void)initSomoDataProvider {
     _somoDataProvider = [[SomoCellDataProvider alloc] initWithCellReuseIdentifier:cellLeftIdentifier];
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
+    self.delegate = _somoDataProvider;
+    self.dataSource = _somoDataProvider;
 }
 
 #pragma mark tableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count?self.dataArray.count:10;
+    return self.dataArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FreeNewsModel *model = self.dataArray[indexPath.row];
+    SAContentModel *model = self.dataArray[indexPath.row];
     if (model.cellSize.height!=0) {
         return model.cellSize.height;
     }
@@ -62,13 +58,21 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"NewsLeftImgCell";
-    NewsLeftImgCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[NewsLeftImgCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    SAContentModel *model = self.dataArray[indexPath.row];
+    Class class = nil;
+    if (model.havePic) {
+        class = [NewsLeftImgCell class];
+    } else {
+        class = [NewsDefaultCell class];
     }
-    if (self.dataArray.count>0) {
-        cell.model = self.dataArray[indexPath.row];
+    BaseNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(class)];
+    
+    if (cell == nil) {
+        cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(class)];
+    }
+    
+    if ([cell respondsToSelector:@selector(setModel:)]) {
+        cell.model = model;
     }
     return cell;
 }
@@ -77,7 +81,7 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
     if (indexPath.row>self.dataArray.count) {
         return;
     }
-    FreeNewsModel *model = self.dataArray[indexPath.row];
+    SAContentModel *model = self.dataArray[indexPath.row];
 
     id<NewsDetailModule> obj = [[OHGRouter router] interfaceForProtocol:@protocol(NewsDetailModule)];
     obj.url = model.link;
@@ -85,7 +89,7 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
 }
 
 - (void)tableView:(UITableView *)tableView prefetchRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {

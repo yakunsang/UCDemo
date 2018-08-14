@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SAContentModel;
 @interface BaseNewsCell : UITableViewCell
 
-@property (nonatomic, copy) NSString *title; // 新闻标题
+@property (nonatomic, strong) SAContentModel *model;
+@property (nonatomic, strong) UIImageView *leftImgV;
+@property (nonatomic, strong) UIScrollView *contentSView;
 
 @end

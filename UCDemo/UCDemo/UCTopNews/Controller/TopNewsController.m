@@ -9,11 +9,13 @@
 #import "TopNewsController.h"
 #import "RecommondNews.h"
 #import "FreeNewsModel.h"
+#import "SAChannelModel.h"
+#import "SAContentModel.h"
 
 @interface TopNewsController ()
 
 @property (nonatomic, strong) RecommondNews *recommondTable;
-@property (nonatomic, strong) NSMutableArray<FreeNewsModel *> *dataArray;
+@property (nonatomic, strong) NSMutableArray<SAContentModel *> *dataArray;
 
 @end
 
@@ -22,7 +24,7 @@
 - (void)viewDidLoad {
     self.recommondTable.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.recommondTable reloadData];
-    [self requestTopNews];
+    [self requestChannelIds];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -35,18 +37,25 @@
     return _recommondTable;
 }
 
-- (void)requestTopNews {
+- (void)requestChannelIds {
     UCNetworkTarget *target = [UCNetworkTarget initWithTarget:self];
     target.successSelector = @selector(requestSuccess:);
-    target.failedSelector = @selector(requestFaild:);
+    target.failedSelector = @selector(requestFail:);
     
-    [UCNetworkService uc_get:@"" params:@{} target:target];
+    [UCNetworkService uc_get:ShowApiURL params:@{} target:target];
 }
 
-
-
-- (void)requestFaild:(NSError *)error {
+- (void)requestTopNews {
+    UCNetworkTarget *target = [UCNetworkTarget initWithTarget:self];
+    target.successSelector = @selector(requestTopNewsSuccess:);
+    target.failedSelector = @selector(requestTopNewsFail:);
+    NSData *arrData = [[NSUserDefaults standardUserDefaults] objectForKey:ChannelIdArray];
     
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithData:arrData];
+    SAChannelModel *model = array[0];
+    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:model.channelId,@"channelId",model.name,@"channelName",@"足球",@"title",@"1",@"page",@"0",@"needContent",@"0",@"needHtml",@"0",@"needAllList",@"20",@"maxResult",@"",@"id", nil];
+    
+    [UCNetworkService uc_post:ShowApiContentURL params:dic target:target];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,19 +71,18 @@
 
 
 - (void)requestSuccess:(id)response {
-    NSDictionary *data = response[@"data"];
-    
+    NSDictionary *data = response[@"showapi_res_body"];
+    ws(weakSelf);
     if (data&&[data isKindOfClass:[NSDictionary class]]) {
         dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-            NSArray *touTiaoArray = data[@"toutiao"];
-            self.dataArray = [FreeNewsModel getModelsfromArray:touTiaoArray].mutableCopy;
+            self.dataArray = [SAChannelModel getChannelModelsFromDic:data].mutableCopy;
             dispatch_semaphore_signal(semaphore);
         });
         dispatch_async(dispatch_get_main_queue(), ^{
             dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-            self.recommondTable.dataArray = self.dataArray;
+            [weakSelf requestTopNews];
             dispatch_semaphore_signal(semaphore);
         });
 
@@ -82,6 +90,20 @@
 }
 
 - (void)requestFail:(NSError *)error {
+    
+}
+
+- (void)requestTopNewsSuccess:(id)respose {
+    NSDictionary *pagebean = respose[@"showapi_res_body"][@"pagebean"];
+    if (pagebean&&pagebean.allKeys.count>0) {
+        self.dataArray = [SAContentModel getModelFromArray:pagebean[@"contentlist"]].mutableCopy;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.recommondTable.dataArray = self.dataArray;
+        });
+    }
+}
+
+- (void)requestTopNewsFail:(NSError *)error {
     
 }
 /*
