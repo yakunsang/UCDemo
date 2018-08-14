@@ -8,18 +8,19 @@
 
 #import "NSString+UCHeight.h"
 #import <UIKit/UIKit.h>
-
+static UILabel *lab;
 @implementation NSString (UCHeight)
 
 + (CGFloat)getHeightWithStr:(NSString *)str
                       Width:(CGFloat)width
                    fontSize:(float)fontSize {
-
+    
     if (width <= 0) return 0;
     if (fontSize <= 0) return 0;
     
-    static UILabel *lab;
-    lab = [[UILabel alloc] init];
+    if (lab==nil) {
+        lab = [[UILabel alloc] init];
+    }
     lab.text = str;
     lab.font = [UIFont systemFontOfSize:fontSize];
     lab.numberOfLines = 0;
