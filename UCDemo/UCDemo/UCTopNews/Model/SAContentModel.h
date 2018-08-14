@@ -13,6 +13,7 @@
 #define SIZE_GAP_SMALL 5
 #define SIZE_GAP_BIG 10
 #define SIZE_IMG 100
+#define SIZE_IMG_WIDTH (SCREEN_WIDTH-SIZE_GAP_LEFT*2-3)/3
 
 @class ImgInfo;
 @interface SAContentModel : NSObject

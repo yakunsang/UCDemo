@@ -11,6 +11,7 @@
 #import "BaseNewsCell.h"
 #import "NewsLeftImgCell.h"
 #import "NewsDefaultCell.h"
+#import "NewsBottomThreeImgCell.h"
 #import "SAContentModel.h"
 #import "SomoCellDataProvider.h"
 
@@ -61,7 +62,11 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
     SAContentModel *model = self.dataArray[indexPath.row];
     Class class = nil;
     if (model.havePic) {
-        class = [NewsLeftImgCell class];
+        if (model.imageurls.count>1) {
+            class = [NewsBottomThreeImgCell class];
+        } else {
+            class = [NewsLeftImgCell class];
+        }
     } else {
         class = [NewsDefaultCell class];
     }
