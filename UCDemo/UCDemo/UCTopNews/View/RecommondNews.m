@@ -34,6 +34,10 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
         self.separatorColor = [UIColor clearColor];
         
         [self initSomoDataProvider];
+        
+        if (@available(iOS 11.0,*)) {
+            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
     }
     return self;
 }
