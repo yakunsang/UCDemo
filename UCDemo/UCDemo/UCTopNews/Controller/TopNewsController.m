@@ -7,14 +7,14 @@
 //
 
 #import "TopNewsController.h"
-#import "RecommondNews.h"
+#import "TopNewsScrollView.h"
 #import "FreeNewsModel.h"
 #import "SAChannelModel.h"
 #import "SAContentModel.h"
 
 @interface TopNewsController ()
 
-@property (nonatomic, strong) RecommondNews *recommondTable;
+@property (nonatomic, strong) TopNewsScrollView *topScrollView;
 @property (nonatomic, strong) NSMutableArray<SAContentModel *> *dataArray;
 
 @end
@@ -22,19 +22,15 @@
 @implementation TopNewsController
 
 - (void)viewDidLoad {
-    self.recommondTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.recommondTable reloadData];
+    [self initTopScrollView];
     [self requestChannelIds];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-- (RecommondNews *)recommondTable {
-    if(!_recommondTable) {
-        _recommondTable = [[RecommondNews alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
-        [self.view addSubview:_recommondTable];
-        _recommondTable.vc = self;
-    }
-    return _recommondTable;
+
+- (void)initTopScrollView {
+    _topScrollView = [[TopNewsScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.view addSubview:_topScrollView];
 }
 
 - (void)requestChannelIds {
@@ -61,12 +57,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)initRecommondTable {
-        _recommondTable = [[RecommondNews alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
-        
-        [self.view addSubview:_recommondTable];
 }
 
 
@@ -98,7 +88,7 @@
     if (pagebean&&pagebean.allKeys.count>0) {
         self.dataArray = [SAContentModel getModelFromArray:pagebean[@"contentlist"]].mutableCopy;
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.recommondTable.dataArray = self.dataArray;
+
         });
     }
 }
