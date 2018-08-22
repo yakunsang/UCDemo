@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3901583C211EAC62000582FB /* FreeNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901583B211EAC62000582FB /* FreeNewsModel.m */; };
 		3901583F211EE12C000582FB /* UIView+Somo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901583E211EE12C000582FB /* UIView+Somo.m */; };
-		39015842211EE2C0000582FB /* SomoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015841211EE2C0000582FB /* SomoView.m */; };
 		39015847211F0AF1000582FB /* SomoCellDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015846211F0AF1000582FB /* SomoCellDataProvider.m */; };
 		3901584A211F0C22000582FB /* SomoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39015849211F0C22000582FB /* SomoViewCell.m */; };
 		3901584D211F2949000582FB /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3901584C211F2949000582FB /* NewsDetailController.m */; };
@@ -21,6 +20,7 @@
 		3905EC13211B1FEC002D416A /* NewsBottomOneImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC12211B1FEC002D416A /* NewsBottomOneImgCell.m */; };
 		3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC15211B2455002D416A /* NewsDefaultCell.m */; };
 		3905EC1A211B3075002D416A /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3905EC19211B3075002D416A /* NewsModel.m */; };
+		392B9D13212D5DD900AC34C7 /* SomoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B9D12212D5DD800AC34C7 /* SomoView.m */; };
 		393CA89E2114440300900104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA89D2114440300900104 /* AppDelegate.m */; };
 		393CA8A12114440300900104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA8A02114440300900104 /* ViewController.m */; };
 		393CA8A42114440300900104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393CA8A22114440300900104 /* Main.storyboard */; };
@@ -54,9 +54,6 @@
 		3901583B211EAC62000582FB /* FreeNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeNewsModel.m; sourceTree = "<group>"; };
 		3901583D211EE12C000582FB /* UIView+Somo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Somo.h"; sourceTree = "<group>"; };
 		3901583E211EE12C000582FB /* UIView+Somo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Somo.m"; sourceTree = "<group>"; };
-		39015840211EE2C0000582FB /* SomoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoView.h; sourceTree = "<group>"; };
-		39015841211EE2C0000582FB /* SomoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoView.m; sourceTree = "<group>"; };
-		39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoSkeletonLayoutProtocl.h; sourceTree = "<group>"; };
 		39015845211F0AF1000582FB /* SomoCellDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoCellDataProvider.h; sourceTree = "<group>"; };
 		39015846211F0AF1000582FB /* SomoCellDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoCellDataProvider.m; sourceTree = "<group>"; };
 		39015848211F0C22000582FB /* SomoViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomoViewCell.h; sourceTree = "<group>"; };
@@ -79,6 +76,9 @@
 		3905EC15211B2455002D416A /* NewsDefaultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDefaultCell.m; sourceTree = "<group>"; };
 		3905EC18211B3075002D416A /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		3905EC19211B3075002D416A /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		392B9D12212D5DD800AC34C7 /* SomoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomoView.m; sourceTree = "<group>"; };
+		392B9D14212D5DF600AC34C7 /* SomoSkeletonLayoutProtocl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomoSkeletonLayoutProtocl.h; sourceTree = "<group>"; };
+		392B9D15212D5DF600AC34C7 /* SomoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomoView.h; sourceTree = "<group>"; };
 		393CA8992114440300900104 /* UCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393CA89C2114440300900104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		393CA89D2114440300900104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -326,9 +326,6 @@
 		393CA8C52114511900900104 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
-				39015840211EE2C0000582FB /* SomoView.h */,
-				39015841211EE2C0000582FB /* SomoView.m */,
-				39015843211EECDE000582FB /* SomoSkeletonLayoutProtocl.h */,
 				3959757E2121D38F00644E68 /* SomoView */,
 				39015844211F0AB3000582FB /* SomoCellDataProvider */,
 				393CA8C62114512300900104 /* BaseViewContoller */,
@@ -352,6 +349,9 @@
 		3959757E2121D38F00644E68 /* SomoView */ = {
 			isa = PBXGroup;
 			children = (
+				392B9D14212D5DF600AC34C7 /* SomoSkeletonLayoutProtocl.h */,
+				392B9D15212D5DF600AC34C7 /* SomoView.h */,
+				392B9D12212D5DD800AC34C7 /* SomoView.m */,
 			);
 			path = SomoView;
 			sourceTree = "<group>";
@@ -484,12 +484,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392B9D13212D5DD900AC34C7 /* SomoView.m in Sources */,
 				3905EC16211B2455002D416A /* NewsDefaultCell.m in Sources */,
 				39015847211F0AF1000582FB /* SomoCellDataProvider.m in Sources */,
 				398EB0CB211859DD00DF4702 /* TabbarViewController.m in Sources */,
 				398EB0C3211823A100DF4702 /* UCNetworkService.m in Sources */,
 				393CA8A12114440300900104 /* ViewController.m in Sources */,
-				39015842211EE2C0000582FB /* SomoView.m in Sources */,
 				398EB0D721185BDB00DF4702 /* VedioController.m in Sources */,
 				398EB0C72118486C00DF4702 /* BaseNavigaionController.m in Sources */,
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
