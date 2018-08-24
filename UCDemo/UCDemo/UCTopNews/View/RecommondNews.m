@@ -37,6 +37,8 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
         
         if (@available(iOS 11.0,*)) {
             self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        } else {
+            self.contentInset = UIEdgeInsetsZero;
         }
     }
     return self;

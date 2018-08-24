@@ -14,13 +14,12 @@
 @interface TopNewsScrollView() <UIScrollViewDelegate,UIGestureRecognizerDelegate>
 
 {
-    CGFloat startY;
+    CGFloat _lastY;
+    BOOL _decelerate;
 }
-
-@property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) RecommondNews *rcdTableView;
 @property (nonatomic, strong) NTNHeadView *norHeadView;
 @property (nonatomic, strong) BrowseHeadView *brseHeadView;
+@property (nonatomic, strong) RecommondNews *rcdTableView;
 
 @end
 
@@ -29,76 +28,65 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor redColor];
-        
-        _scrollView = [[UIScrollView alloc] initWithFrame:frame];
-        _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT*2);
-        if (@available(iOS 11.0,*)) {
-            _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }
-        _norHeadView = [[NTNHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
-        _rcdTableView = [[RecommondNews alloc] initWithFrame:CGRectMake(0, 300, SCREEN_WIDTH, SCREEN_HEIGHT*2-300) style:UITableViewStylePlain];
-        [_scrollView addSubview:_norHeadView];
-        [_scrollView addSubview:_rcdTableView];
-        [self addSubview:_scrollView];
+        self.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT*2);
+        self.delaysContentTouches = NO; // 默认是YES 设置NO 会调用touchesShuldBegin withEvent inContentView
+        self.delegate = self;
+        _norHeadView = [[NTNHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, vHeight)];
+        [self addSubview:_norHeadView];
+        _rcdTableView = [[RecommondNews alloc] initWithFrame:CGRectMake(0, vHeight, SCREEN_WIDTH, SCREEN_HEIGHT*2-vHeight) style:UITableViewStylePlain];
+        [self addSubview:_rcdTableView];
     }
     return self;
 }
 
-#pragma mark PanGestureDelegate
-
-- (void)panGesture {
-    
-}
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    return YES;
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    NSLog(@"%@",gestureRecognizer.view);
-    switch (gestureRecognizer.state) {
-        case UIGestureRecognizerStateChanged:
-            NSLog(@"%@",touch);
-            break;
-            
-        default:
-            break;
+- (BOOL)touchesShouldBegin:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event inContentView:(UIView *)view {
+    if ([view isKindOfClass:[RecommondNews class]]||[view isKindOfClass:[NTNHeadView class]]) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return YES;
+- (BOOL)touchesShouldCancelInContentView:(UIView *)view {
+    return NO;
 }
 
 #pragma mark UIScrollViewDelegate
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    startY = scrollView.contentOffset.y;
-//    NSLog(@"\n startY = %f",startY);
+    _decelerate = NO;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    NSLog(@"%f",scrollView.contentOffset.y);
-    if (scrollView.contentOffset.y>0) {
-        if (scrollView.contentOffset.y>startY) { // 上推
-            
-        } else { // 下拉
-            
+    if (_decelerate) {
+        return;
+    }
+    if (scrollView.contentOffset.y > _lastY) { // 上推
+        NSLog(@"上推 %f",scrollView.contentOffset.y);
+        
+        self.norHeadView.mj_y = (scrollView.contentOffset.y)>0?(scrollView.contentOffset.y):0;// headView 固定不动
+
+        self.norHeadView.scrollViewState = ScrollViewUpState;
+        self.norHeadView.offSetY = scrollView.contentOffset.y; //监控scrollView偏移量y
+
+    } else { // 下拉
+        NSLog(@"下拉 %f",scrollView.contentOffset.y);
+        if(scrollView.contentOffset.y<vHeight&&scrollView.contentOffset.y>0) {
+            self.norHeadView.mj_y = 0;
+            self.norHeadView.scrollViewState = ScrollViewDownState;
+            self.norHeadView.offSetY = scrollView.contentOffset.y;
+            return;
         }
-    } else {
-        if (scrollView.contentOffset.y<startY) { // 下拉
-            
-        } else { //上推
-            
-        }
+        
+        self.norHeadView.mj_y = 0;
     }
     
+    _lastY = scrollView.contentOffset.y;
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (decelerate) {
+        _decelerate = decelerate;
+    }
 }
 
 

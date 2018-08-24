@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopNewsScrollView : UIView
+@interface TopNewsScrollView : UIScrollView
 
 @end
+

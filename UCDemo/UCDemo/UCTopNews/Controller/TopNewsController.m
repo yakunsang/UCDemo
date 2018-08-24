@@ -30,6 +30,12 @@
 
 - (void)initTopScrollView {
     _topScrollView = [[TopNewsScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    if (@available(iOS 11.0,*)) {
+        _topScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:_topScrollView];
 }
 
