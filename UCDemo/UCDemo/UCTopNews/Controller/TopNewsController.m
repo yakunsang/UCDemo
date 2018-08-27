@@ -11,9 +11,13 @@
 #import "FreeNewsModel.h"
 #import "SAChannelModel.h"
 #import "SAContentModel.h"
+#import "BrowseHeadView.h"
+#import "NTNHeadView.h"
 
 @interface TopNewsController ()
 
+@property (nonatomic, strong) BrowseHeadView *brseHeadView;
+@property (nonatomic, strong) NTNHeadView *norHeadView;
 @property (nonatomic, strong) TopNewsScrollView *topScrollView;
 @property (nonatomic, strong) NSMutableArray<SAContentModel *> *dataArray;
 
@@ -22,20 +26,27 @@
 @implementation TopNewsController
 
 - (void)viewDidLoad {
+    
     [self initTopScrollView];
     [self requestChannelIds];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
+- (void)initBrseHeadView {
+    _norHeadView = [[NTNHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, vHeight)];
+    [self.view addSubview:_norHeadView];
+}
+
 - (void)initTopScrollView {
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     _topScrollView = [[TopNewsScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     if (@available(iOS 11.0,*)) {
-        _topScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        _topScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.view addSubview:_topScrollView];
 }
 

@@ -65,6 +65,13 @@ static NSString *cellLeftIdentifier = @"CellLeftImage";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (@available(iOS 11.0, *)) {
+        tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        // Fallback on earlier versions
+    }
+    
     SAContentModel *model = self.dataArray[indexPath.row];
     Class class = nil;
     if (model.havePic) {

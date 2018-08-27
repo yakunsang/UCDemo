@@ -27,12 +27,11 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor redColor];
         self.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT*2);
         self.delaysContentTouches = NO; // 默认是YES 设置NO 会调用touchesShuldBegin withEvent inContentView
         self.delegate = self;
-        _norHeadView = [[NTNHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, vHeight)];
-        [self addSubview:_norHeadView];
+//        _norHeadView = [[NTNHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, vHeight)];
+//        [self addSubview:_norHeadView];
         _rcdTableView = [[RecommondNews alloc] initWithFrame:CGRectMake(0, vHeight, SCREEN_WIDTH, SCREEN_HEIGHT*2-vHeight) style:UITableViewStylePlain];
         [self addSubview:_rcdTableView];
     }
@@ -63,7 +62,7 @@
     if (scrollView.contentOffset.y > _lastY) { // 上推
         NSLog(@"上推 %f",scrollView.contentOffset.y);
         
-        self.norHeadView.mj_y = (scrollView.contentOffset.y)>0?(scrollView.contentOffset.y):0;// headView 固定不动
+        self.norHeadView.mj_y = 0;// headView 固定不动
 
         self.norHeadView.scrollViewState = ScrollViewUpState;
         self.norHeadView.offSetY = scrollView.contentOffset.y; //监控scrollView偏移量y
