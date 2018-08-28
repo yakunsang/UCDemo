@@ -26,7 +26,7 @@
 @implementation TopNewsController
 
 - (void)viewDidLoad {
-    
+    [self initBrseHeadView];
     [self initTopScrollView];
     [self requestChannelIds];
     [super viewDidLoad];
@@ -39,14 +39,25 @@
 }
 
 - (void)initTopScrollView {
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-
+    ws(weakSelf);
     _topScrollView = [[TopNewsScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     if (@available(iOS 11.0,*)) {
-        _topScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
+        _topScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    _topScrollView.scrollContentOffset = ^(CGFloat contentOffset, ScrollViewState state) {
+        if (state == ScrollViewUpState) {
+            weakSelf.norHeadView.scrollViewState = ScrollViewUpState;
+            [weakSelf.norHeadView setOffSetY:contentOffset];
+        } else {
+            weakSelf.norHeadView.y = contentOffset;
+            weakSelf.norHeadView.scrollViewState = ScrollViewDownState;
+            [weakSelf.norHeadView setOffSetY:contentOffset];
+            [weakSelf.view setNeedsLayout];
+            [weakSelf.view layoutIfNeeded];
+        }
+    };
     [self.view addSubview:_topScrollView];
 }
 

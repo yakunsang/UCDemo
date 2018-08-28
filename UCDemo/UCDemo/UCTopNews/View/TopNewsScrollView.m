@@ -56,29 +56,18 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (_decelerate) {
-        return;
-    }
     if (scrollView.contentOffset.y > _lastY) { // 上推
         NSLog(@"上推 %f",scrollView.contentOffset.y);
-        
-        self.norHeadView.mj_y = 0;// headView 固定不动
-
-        self.norHeadView.scrollViewState = ScrollViewUpState;
-        self.norHeadView.offSetY = scrollView.contentOffset.y; //监控scrollView偏移量y
+        if (self.scrollContentOffset) {
+            self.scrollContentOffset(scrollView.contentOffset.y,ScrollViewUpState);
+        }
 
     } else { // 下拉
         NSLog(@"下拉 %f",scrollView.contentOffset.y);
-        if(scrollView.contentOffset.y<vHeight&&scrollView.contentOffset.y>0) {
-            self.norHeadView.mj_y = 0;
-            self.norHeadView.scrollViewState = ScrollViewDownState;
-            self.norHeadView.offSetY = scrollView.contentOffset.y;
-            return;
+        if (self.scrollContentOffset) {
+            self.scrollContentOffset(scrollView.contentOffset.y,ScrollViewDownState);
         }
-        
-        self.norHeadView.mj_y = 0;
     }
-    
     _lastY = scrollView.contentOffset.y;
 }
 

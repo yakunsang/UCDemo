@@ -24,6 +24,7 @@
 		392B9D18212D618C00AC34C7 /* TopNewsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B9D17212D618C00AC34C7 /* TopNewsScrollView.m */; };
 		392B9D1B212D633F00AC34C7 /* NTNHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B9D1A212D633F00AC34C7 /* NTNHeadView.m */; };
 		392B9D1E212D64B500AC34C7 /* BrowseHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B9D1D212D64B500AC34C7 /* BrowseHeadView.m */; };
+		392B9D2721355C5700AC34C7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B9D2621355C5700AC34C7 /* UIView+Frame.m */; };
 		393CA89E2114440300900104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA89D2114440300900104 /* AppDelegate.m */; };
 		393CA8A12114440300900104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA8A02114440300900104 /* ViewController.m */; };
 		393CA8A42114440300900104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393CA8A22114440300900104 /* Main.storyboard */; };
@@ -88,6 +89,8 @@
 		392B9D1A212D633F00AC34C7 /* NTNHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTNHeadView.m; sourceTree = "<group>"; };
 		392B9D1C212D64B500AC34C7 /* BrowseHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseHeadView.h; sourceTree = "<group>"; };
 		392B9D1D212D64B500AC34C7 /* BrowseHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseHeadView.m; sourceTree = "<group>"; };
+		392B9D2521355C5700AC34C7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		392B9D2621355C5700AC34C7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		393CA8992114440300900104 /* UCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		393CA89C2114440300900104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		393CA89D2114440300900104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				3901583E211EE12C000582FB /* UIView+Somo.m */,
 				399614C62122B4F100D1D91D /* NSString+UCHeight.h */,
 				399614C72122B4F100D1D91D /* NSString+UCHeight.m */,
+				392B9D2521355C5700AC34C7 /* UIView+Frame.h */,
+				392B9D2621355C5700AC34C7 /* UIView+Frame.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -509,6 +514,7 @@
 				398EB0C72118486C00DF4702 /* BaseNavigaionController.m in Sources */,
 				3905EC1A211B3075002D416A /* NewsModel.m in Sources */,
 				3901583F211EE12C000582FB /* UIView+Somo.m in Sources */,
+				392B9D2721355C5700AC34C7 /* UIView+Frame.m in Sources */,
 				392B9D18212D618C00AC34C7 /* TopNewsScrollView.m in Sources */,
 				393CA8BF2114494000900104 /* ModuleASI.m in Sources */,
 				399614C52122AF7B00D1D91D /* SAContentModel.m in Sources */,

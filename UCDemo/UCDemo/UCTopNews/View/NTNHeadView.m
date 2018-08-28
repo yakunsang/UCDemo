@@ -41,7 +41,6 @@
 
 
 - (void)setOffSetY:(CGFloat)offSetY {
-    if (offSetY < 0) return;
     if (self.scrollViewState == ScrollViewUpState) {
         self.maskView.hidden = NO;
         
