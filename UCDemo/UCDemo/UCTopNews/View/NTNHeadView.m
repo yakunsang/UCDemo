@@ -41,28 +41,34 @@
 
 
 - (void)setOffSetY:(CGFloat)offSetY {
+    if (offSetY<0)return;
     if (self.scrollViewState == ScrollViewUpState) {
-        self.maskView.hidden = NO;
-        
-        if (offSetY<50) {
+        self.maskView.hidden = YES;
+        if (offSetY<100&&offSetY>=0&&!_pull) { // 0< offSetY <100
             CGFloat scale = (vHeight-offSetY)/vHeight;
             NSLog(@"\n scale = %f",scale);
             self.bottomImgV.hidden = NO;
             self.bottomImgV.transform = CGAffineTransformMakeScale(scale,scale);;
-        } else {
-            self.bottomImgV.hidden = YES;
+        } else if(offSetY<0){ // offSetY<0
+            self.bottomImgV.hidden = NO;
+            self.bottomImgV.transform = CGAffineTransformIdentity;
+        }else{ //offSetY>100
+            self.bottomImgV.hidden = _pull?NO:YES;
             self.bottomImgV.transform = CGAffineTransformIdentity;
         }
     } else {
-        if (offSetY<50&&offSetY>0) {
+        if (offSetY<100&&offSetY>0&&!_pull) {
             self.maskView.hidden = NO;
             CGFloat scale = (vHeight-offSetY)/vHeight;
             NSLog(@"\n scale = %f",scale);
             self.bottomImgV.hidden = NO;
             self.maskView.alpha = 1-scale;
             self.bottomImgV.transform = CGAffineTransformMakeScale(scale, scale);
-        } else {
+        } else if(offSetY<=0){
             self.maskView.hidden = YES;
+            self.bottomImgV.transform = CGAffineTransformIdentity;
+        } else {
+            self.maskView.hidden = _pull?YES:NO;
             self.bottomImgV.transform = CGAffineTransformIdentity;
         }
     }

@@ -47,16 +47,39 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     _topScrollView.scrollContentOffset = ^(CGFloat contentOffset, ScrollViewState state) {
-        if (state == ScrollViewUpState) {
-            weakSelf.norHeadView.scrollViewState = ScrollViewUpState;
-            [weakSelf.norHeadView setOffSetY:contentOffset];
-        } else {
-            weakSelf.norHeadView.y = contentOffset;
-            weakSelf.norHeadView.scrollViewState = ScrollViewDownState;
-            [weakSelf.norHeadView setOffSetY:contentOffset];
-            [weakSelf.view setNeedsLayout];
-            [weakSelf.view layoutIfNeeded];
-        }
+            BOOL pull; // 下拉
+            if (state == ScrollViewUpState) {
+                if (contentOffset<0) {
+                    contentOffset = -contentOffset;
+                    pull = YES;
+                    weakSelf.norHeadView.y = contentOffset;
+
+                } else {
+                    weakSelf.norHeadView.y = 0;
+                    pull = NO;
+                }
+                weakSelf.norHeadView.pull = pull;
+                weakSelf.norHeadView.scrollViewState = ScrollViewUpState;
+                [weakSelf.norHeadView setOffSetY:contentOffset];
+                [weakSelf.view setNeedsLayout];
+                [weakSelf.view layoutIfNeeded];
+            } else {
+                if (contentOffset<0) {
+                    contentOffset = -contentOffset;
+                    pull = YES;
+                } else {
+                    pull = NO;
+                    if (contentOffset<vHeight) {
+                        return ;
+                    }
+                }
+                weakSelf.norHeadView.y = contentOffset;
+                weakSelf.norHeadView.pull = pull;
+                weakSelf.norHeadView.scrollViewState = ScrollViewDownState;
+                [weakSelf.norHeadView setOffSetY:contentOffset];
+                [weakSelf.view setNeedsLayout];
+                [weakSelf.view layoutIfNeeded];
+            }
     };
     [self.view addSubview:_topScrollView];
 }

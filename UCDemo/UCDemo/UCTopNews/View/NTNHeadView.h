@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger,ScrollViewState) {
 
 @interface NTNHeadView : UIView // 首次进入状态
 
+@property (nonatomic, assign) BOOL pull; // 下拉contentOffSet<0回弹不需要动画
 @property (nonatomic, assign) ScrollViewState scrollViewState;
 @property (nonatomic, assign) CGFloat offSetY;
 
